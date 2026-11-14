@@ -1,14 +1,16 @@
 {
   "status": "passed",
-  "checked_at": "2026-11-14T05:17:57.405538+00:00",
+  "checked_at": "2026-11-14T05:21:33.305202+00:00",
   "report_relative_links_checked": 21,
   "experiment_rows": 3,
   "original_assignment_docs_unchanged": true,
-  "text_files_scanned_for_common_key_patterns": 84,
+  "text_files_scanned_for_common_key_patterns": 85,
   "common_key_patterns_found": 0,
   "env_and_virtualenv_excluded_from_git": true,
-  "report_sha256": "88a5e08de7eae12ff0e2e44ae91681ef41f1a546caf3ab5f37c488ba32ddfccb",
-  "limitations": "Common-pattern scan, not an exhaustive secret detector; no claim that audit labels are human-confirmed or repository is submitted.",
-  "staged_text_files_scanned_for_common_key_patterns": 62,
-  "staged_common_key_patterns_found": 0
+  "report_sha256": "072f746998a6009cc8be83735c6026facf28ed115969f6f8a62b12b00aa98959",
+  "implementation_commit": "58af8c6fd328ef28896e008b09df30cecb90a36d",
+  "merged_implementation_commit": "7801c7f5330174cc1a5718665478aa19249dda12",
+  "merged_tree_matches_feature": true,
+  "human_confirmation": "pending",
+  "limitations": "Common-pattern scan, not an exhaustive secret detector; GitHub publication is complete for the implementation snapshot, not classroom submission or human audit confirmation."
 }

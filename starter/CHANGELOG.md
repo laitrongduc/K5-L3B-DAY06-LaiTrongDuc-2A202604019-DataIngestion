@@ -7,6 +7,7 @@ Nhật ký phục vụ giải thích mã nguồn, tái lập thí nghiệm và v
 Phần này là hướng dẫn hiện hành. Các mục phía dưới giữ lịch sử thực hiện, gồm cả chức năng/tệp đã bổ sung rồi bỏ; không cần làm lại các bước lịch sử.
 
 - **Code:** `starter/src/`, script trong `starter/scripts/`, tests trong `starter/tests/`.
+- **Phát hành:** nhánh triển khai `feat/data-ingestion` đã push và merge vào `main`; SHA chốt code/benchmark là `7801c7f5330174cc1a5718665478aa19249dda12`. Các cập nhật sau merge chỉ ghi metadata phát hành, không thay thí nghiệm đã khóa. Kết quả xác minh GitHub nằm ở mục phát hành cuối nhật ký.
 - **Dữ liệu:** `data/`; **benchmark:** `benchmark/`; **kết quả:** `results/` ở root repo.
 - Đã có 40 trang corpus, 20 câu (15 dev/5 test), evidence, 10 vị trí coherence cố định. Cấu hình hiện hành dùng **`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` + PostgreSQL/pgvector**, 384 chiều, cosine. Đã nạp thật A=244, B=229; C dùng chung chunks/vector của B và lọc theo input câu hỏi. **Đã chạy benchmark dev/test**: 60 trace/180 hits; chọn B trên dev rồi mới chạy test. Có 30/15/45 mẫu coherence/grounding/metadata đã được Codex đọc/đánh giá và ghi rõ AI reviewer; **chưa có xác nhận nhãn thủ công của học viên**.
 - Bộ chấm chỉ giữ **Hit@1, Evidence Hit@3, n/N theo dev/test**, trace top-3 và tuân thủ filter. Chỉ tính hit khi đúng nguồn/trang và đủ evidence chính/thay thế.
@@ -674,6 +675,23 @@ starter/.venv/bin/python starter/scripts/audit_benchmark_quality.py
 - Đồng bộ refs từ `origin`, kiểm tra quyền repository và đối chiếu main trước khi push. Chỉ stage dữ liệu/code/artifacts/báo cáo phục vụ bài nộp; giữ `.vscode/` cá nhân, `.env`, virtualenv, model cache và database local ngoài commit.
 - Giữ khai báo audit do AI đánh giá và trạng thái human confirmation pending. Việc cho phép push/merge không được diễn giải thành việc học viên đã đọc/chấm các nhãn.
 - Sau merge sẽ ghi SHA merge thật vào STUDENT.md và cập nhật trạng thái phát hành trong báo cáo/changelog; không tự ghi SHA dự đoán hoặc tuyên bố đã nộp bài qua kênh của lớp.
+
+## 2026-11-14 — Đã push và merge vào main
+
+### Kết quả thực tế
+
+- Commit triển khai: `58af8c6fd328ef28896e008b09df30cecb90a36d` (`feat: complete MiniLM pgvector ingestion and evaluation`), gồm 63 file bài làm. Đã push thành công lên `origin/feat/data-ingestion`.
+- GitHub connector đọc được repo nhưng tạo PR bị **HTTP 403: Resource not accessible by integration**. Không có PR được tạo. Theo yêu cầu push/merge của người dùng, chuyển sang Git trực tiếp, không đổi quyền repo hay bỏ qua branch protection.
+- Đồng bộ main với origin/main, merge bằng `git merge --no-ff feat/data-ingestion`, không có conflict. Merge commit: `7801c7f5330174cc1a5718665478aa19249dda12`; hai parents là main gốc `42f64eb230289ff5042abc03683252649dfbef79` và commit triển khai `58af8c6fd328ef28896e008b09df30cecb90a36d`.
+- `git push origin main` thành công. GitHub compare `feat/data-ingestion...main` xác nhận ahead 1/behind 0, merge base đúng commit triển khai và **files=[]**: không mất hoặc đổi nội dung code/artifacts ở bước merge.
+- GitHub combined-status trả danh sách trống; không tuyên bố có CI pass. Minh chứng kiểm tra là 53 tests local gồm PostgreSQL thật, validator evidence, checksum/selection lock, metric/audit matrix và kiểm tra staged diff/secret patterns.
+- Điền SHA merge thật vào trường commit của `STUDENT.md`; cập nhật nhánh phát hành/trạng thái publish trong báo cáo và phần hướng dẫn hiện hành của changelog. Commit metadata sau merge không thay pipeline/benchmark, dùng SHA merge làm snapshot chốt triển khai để tránh bài toán SHA tự tham chiếu.
+- Sửa hai Markdown hard-break dùng khoảng trắng cuối dòng trong báo cáo thành dòng trống; kiểm tra lại staged diff thay vì chỉ working-tree diff để bao quát cả file mới. Checksum báo cáo được cập nhật cùng metadata, không thay điểm hoặc nhãn.
+
+### Phần giữ nguyên và giới hạn
+
+- Không force-push, không xóa nhánh, không stage `.vscode/` cá nhân, secrets, virtualenv, model cache hay database. Không sửa các tài liệu đề bài/README gốc. Các nội dung lịch sử “chưa push/merge” phía trên mô tả đúng trạng thái trước lần phát hành này.
+- Nhãn audit vẫn khai báo reviewer là Codex và human confirmation pending. Không giả nhận người dùng đã chấm tay khi chỉ mới cho phép công bố mã. Chưa nộp link qua kênh giảng viên/coach vì chưa có thông tin kênh nộp; repo đã công khai và có thể truy cập trên GitHub.
 
 ## Mẫu cho lần cập nhật tiếp theo
 

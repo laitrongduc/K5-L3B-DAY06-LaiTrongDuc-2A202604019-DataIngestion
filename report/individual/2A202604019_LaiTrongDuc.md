@@ -4,7 +4,7 @@
 
 **Chủ đề:** Tra cứu kiến thức Python cơ bản cho học sinh, sinh viên.
 
-**Nhánh:** `feat/data-ingestion` · **Ngày chạy:** 14/11/2026.
+**Nhánh triển khai:** `feat/data-ingestion` · **Nhánh phát hành:** `main` · **Ngày chạy:** 14/11/2026.
 
 Đã chạy cùng corpus/model/pgvector cho A/B/C, lưu 60 trace và 180 bản ghi top-3. **B được chọn trên dev trước khi chạy test**, đạt Evidence Hit@3 dev 11/15 và test 3/5. C đạt cùng số hit nhưng bảo đảm phạm vi chapter cho các câu có filter. Không điều chỉnh cấu hình sau khi xem test.
 
@@ -126,3 +126,5 @@ Phiên bản chính: Python 3.12.16; pypdf 6.21.4; Poppler 26.01.0; torch 2.15.0
 [Experiment log](../../artifacts/experiment_log.csv) ghi cấu hình, giả thuyết thiết kế và kết quả; CSV được tổng hợp sau chạy, không giả nhận là log giả thuyết preregistered riêng. [Audit summary](../../results/audit_summary.json) giữ cả provenance reviewer và trạng thái chưa xác nhận human. Kết quả Gemma/Qdrant cũ nằm riêng trong `results/archive/embeddinggemma2_qdrant/`, không dùng trong bảng hiện hành.
 
 Kiểm tra local cuối: **53 tests đạt**, có bốn kiểm thử PostgreSQL thật; snapshot/selection lock đúng; đủ 60 trace/180 hits và 30/15/45 mẫu audit; `pip check` không phát hiện dependency lỗi. Không commit `.env`, weights hoặc virtualenv.
+
+**Phát hành:** đã push nhánh `feat/data-ingestion` tại commit `58af8c6fd328ef28896e008b09df30cecb90a36d`, merge bằng Git `--no-ff` và push `main` tại [commit chốt triển khai `7801c7f`](https://github.com/laitrongduc/K5-L3B-DAY06-LaiTrongDuc-2A202604019-DataIngestion/commit/7801c7f5330174cc1a5718665478aa19249dda12). GitHub xác nhận merge base đúng commit triển khai và không có khác biệt file ở bước merge. GitHub connector không tạo được PR do HTTP 403, nên dùng Git trực tiếp theo yêu cầu người dùng. Các cập nhật sau merge chỉ ghi metadata phát hành/checksum tài liệu, không thay code, cấu hình, gold, trace hoặc số đo benchmark; STUDENT.md ghi SHA merge này để tránh tham chiếu SHA tự chứa chính nó.
