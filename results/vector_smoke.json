@@ -1,0 +1,299 @@
+{
+  "question": "In Chapter 2, what is a Python variable?",
+  "purpose": "Unscored setup check, not dev/test evaluation",
+  "results": {
+    "A": {
+      "filter": null,
+      "hits": [
+        {
+          "chunk_id": "723790235f9f6d0b31d9d898e19eb5019857a7bbf358eaba89b528d3067b7113",
+          "text": "When you create a variable\noutside of any function, it belongs to __main__.\n\nEach parameter refers to the same value as its corresponding argument. So, part1 has the\nsame value as line1, part2 has the same value as line2, and bruce has the same value as\ncat.\n\nIf an error occurs during a function call, Python prints the name of the function, the name\nof the function that called it, and the name of the function that called that, all the way back\nto __main__.\n\nFor example, if you try to access cat ",
+          "metadata": {
+            "page": 45,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 3,
+            "page_id": "think-python-2e-2.4.1:pdf-045",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "fixed_size",
+            "end_char": 1850,
+            "language": "en",
+            "char_count": 500,
+            "max_tokens": 128,
+            "start_char": 1350,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 123,
+            "printed_page": 23,
+            "chapter_title": "Functions",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": true,
+            "page_char_count": 2143,
+            "chunk_parameters": {
+              "size": 500,
+              "overlap": 50
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.6495839357376145
+        },
+        {
+          "chunk_id": "55a58ef5897ebcd09b7c92b516d86f495c73a8c6832b8de77bb92fc1e60662f1",
+          "text": "Python 3 has thes",
+          "metadata": {
+            "page": 32,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 2,
+            "page_id": "think-python-2e-2.4.1:pdf-032",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "fixed_size",
+            "end_char": 950,
+            "language": "en",
+            "char_count": 17,
+            "max_tokens": 128,
+            "start_char": 933,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 7,
+            "printed_page": 10,
+            "chapter_title": "Variables, expressions and statements",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": true,
+            "page_char_count": 2099,
+            "parent_chunk_id": "0a583ab968f3b3dfb0f34949456e1fc7017c8a5b19c931bd7eb60547f8643fd2",
+            "chunk_parameters": {
+              "size": 500,
+              "overlap": 50,
+              "max_tokens": 128,
+              "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.5858527072755879
+        },
+        {
+          "chunk_id": "dde31553e07bcbc537646fc41dcb6c571e753e2b6bd28eaae0366eccfd2b3018",
+          "text": "The first line is an assignment statement that gives a value to n. The second line is a print\nstatement that displays the value of n.\nWhen you type a statement, the interpreter executes it, which means that it does whatever\nthe statement says. In general, statements don’t have values.\n\n2.4     Script mode\nSo far we have run Python in interactive mode, which means that you interact directly\nwith the interpreter. Interactive mode is a good way to get started, but if you are working\nwith more than ",
+          "metadata": {
+            "page": 33,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 2,
+            "page_id": "think-python-2e-2.4.1:pdf-033",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "fixed_size",
+            "end_char": 500,
+            "language": "en",
+            "char_count": 500,
+            "max_tokens": 128,
+            "start_char": 0,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 109,
+            "printed_page": 11,
+            "chapter_title": "Variables, expressions and statements",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": true,
+            "page_char_count": 2389,
+            "chunk_parameters": {
+              "size": 500,
+              "overlap": 50
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.5823037873325485
+        }
+      ]
+    },
+    "B": {
+      "filter": null,
+      "hits": [
+        {
+          "chunk_id": "e40549421037e8cfd93da3ca3b5c218b1ddc3a6d4fea6cc32f4a3bcb53d34414",
+          "text": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n",
+          "metadata": {
+            "page": 31,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 2,
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "paragraph",
+            "end_char": 196,
+            "language": "en",
+            "char_count": 196,
+            "max_tokens": 128,
+            "start_char": 0,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 44,
+            "printed_page": 9,
+            "chapter_title": "Variables, expressions and statements",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": false,
+            "page_char_count": 1260,
+            "chunk_parameters": {
+              "max_size": 500
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.6020756601050113
+        },
+        {
+          "chunk_id": "96a518ee97eeae313b46c71931b1d4aaacbef39b0e70167a20f1441d654b3699",
+          "text": "Finally, str converts its argument to a string:\n>>> str(32)\n'32'\n>>> str(3.14159)\n'3.14159'\n\n3.2    Math functions\nPython has a math module that provides most of the familiar mathematical functions. A\nmodule is a file that contains a collection of related functions.\n\n",
+          "metadata": {
+            "page": 40,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 3,
+            "page_id": "think-python-2e-2.4.1:pdf-040",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "paragraph",
+            "end_char": 268,
+            "language": "en",
+            "char_count": 268,
+            "max_tokens": 128,
+            "start_char": 0,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 67,
+            "printed_page": 18,
+            "chapter_title": "Functions",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": true,
+            "page_char_count": 1773,
+            "chunk_parameters": {
+              "max_size": 500
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.5485255333437572
+        },
+        {
+          "chunk_id": "4894946b07d4e33e9c930d416c11b74e42b9bfab524432a2c2bebbbc15cff767",
+          "text": "2.9      Glossary\nvariable: A name that refers to a value.\n\nassignment: A statement that assigns a value to a variable.\n\nstate diagram: A graphical representation of a set of variables and the values they refer to.\n\nkeyword: A reserved word that is used to parse a program; you cannot use keywords like\n    if, def, and while as variable names.\n\noperand: One of the values on which an operator operates.\n\n",
+          "metadata": {
+            "page": 36,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 2,
+            "page_id": "think-python-2e-2.4.1:pdf-036",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "paragraph",
+            "end_char": 405,
+            "language": "en",
+            "char_count": 405,
+            "max_tokens": 128,
+            "start_char": 0,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 99,
+            "printed_page": 14,
+            "chapter_title": "Variables, expressions and statements",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": true,
+            "page_char_count": 1969,
+            "chunk_parameters": {
+              "max_size": 500
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.5418743764236951
+        }
+      ]
+    },
+    "C": {
+      "filter": {
+        "chapter": 2
+      },
+      "hits": [
+        {
+          "chunk_id": "e40549421037e8cfd93da3ca3b5c218b1ddc3a6d4fea6cc32f4a3bcb53d34414",
+          "text": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n",
+          "metadata": {
+            "page": 31,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 2,
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "paragraph",
+            "end_char": 196,
+            "language": "en",
+            "char_count": 196,
+            "max_tokens": 128,
+            "start_char": 0,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 44,
+            "printed_page": 9,
+            "chapter_title": "Variables, expressions and statements",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": false,
+            "page_char_count": 1260,
+            "chunk_parameters": {
+              "max_size": 500
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.6020756601050113
+        },
+        {
+          "chunk_id": "4894946b07d4e33e9c930d416c11b74e42b9bfab524432a2c2bebbbc15cff767",
+          "text": "2.9      Glossary\nvariable: A name that refers to a value.\n\nassignment: A statement that assigns a value to a variable.\n\nstate diagram: A graphical representation of a set of variables and the values they refer to.\n\nkeyword: A reserved word that is used to parse a program; you cannot use keywords like\n    if, def, and while as variable names.\n\noperand: One of the values on which an operator operates.\n\n",
+          "metadata": {
+            "page": 36,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 2,
+            "page_id": "think-python-2e-2.4.1:pdf-036",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "paragraph",
+            "end_char": 405,
+            "language": "en",
+            "char_count": 405,
+            "max_tokens": 128,
+            "start_char": 0,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 99,
+            "printed_page": 14,
+            "chapter_title": "Variables, expressions and statements",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": true,
+            "page_char_count": 1969,
+            "chunk_parameters": {
+              "max_size": 500
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.5418743764236951
+        },
+        {
+          "chunk_id": "299d97137d3cc4cbc084d09f718de36d719114dc8ecf771c12655f02f9bf1d20",
+          "text": "The first line is an assignment statement that gives a value to n. The second line is a print\nstatement that displays the value of n.\nWhen you type a statement, the interpreter executes it, which means that it does whatever\nthe statement says. In general, statements don’t have values.\n\n",
+          "metadata": {
+            "page": 33,
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "chapter": 2,
+            "page_id": "think-python-2e-2.4.1:pdf-033",
+            "version": "2nd Edition, Version 2.4.1",
+            "chunking": "paragraph",
+            "end_char": 287,
+            "language": "en",
+            "char_count": 287,
+            "max_tokens": 128,
+            "start_char": 0,
+            "document_id": "think-python-2e-2.4.1",
+            "token_count": 66,
+            "printed_page": 11,
+            "chapter_title": "Variables, expressions and statements",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "header_removed": true,
+            "page_char_count": 2389,
+            "chunk_parameters": {
+              "max_size": 500
+            },
+            "extraction_backend": "poppler-layout",
+            "tokenizer_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42"
+          },
+          "score": 0.5158025314925602
+        }
+      ]
+    }
+  }
+}

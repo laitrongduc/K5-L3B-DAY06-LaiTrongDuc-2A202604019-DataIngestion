@@ -1,0 +1,17 @@
+{
+  "A": {
+    "chunking": "fixed_size",
+    "size": 500,
+    "overlap": 50,
+    "use_question_filter": false
+  },
+  "B": {
+    "chunking": "paragraph",
+    "max_size": 500,
+    "use_question_filter": false
+  },
+  "C": {
+    "chunks_from": "B",
+    "use_question_filter": true
+  }
+}

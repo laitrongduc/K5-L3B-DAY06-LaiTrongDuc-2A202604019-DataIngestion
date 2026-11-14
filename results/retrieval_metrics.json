@@ -1,0 +1,131 @@
+{
+  "by_strategy_split": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "question_count": 15,
+      "hit1": {
+        "n": 3,
+        "N": 15,
+        "rate": 0.2
+      },
+      "evidence_hit3": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "filter_compliance": {
+        "n": 1,
+        "N": 2,
+        "rate": 0.5
+      },
+      "queries_with_fewer_than_three_hits": 0
+    },
+    {
+      "strategy": "A",
+      "split": "test",
+      "question_count": 5,
+      "hit1": {
+        "n": 2,
+        "N": 5,
+        "rate": 0.4
+      },
+      "evidence_hit3": {
+        "n": 2,
+        "N": 5,
+        "rate": 0.4
+      },
+      "filter_compliance": {
+        "n": 1,
+        "N": 2,
+        "rate": 0.5
+      },
+      "queries_with_fewer_than_three_hits": 0
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "question_count": 15,
+      "hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "evidence_hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "filter_compliance": {
+        "n": 1,
+        "N": 2,
+        "rate": 0.5
+      },
+      "queries_with_fewer_than_three_hits": 0
+    },
+    {
+      "strategy": "B",
+      "split": "test",
+      "question_count": 5,
+      "hit1": {
+        "n": 2,
+        "N": 5,
+        "rate": 0.4
+      },
+      "evidence_hit3": {
+        "n": 3,
+        "N": 5,
+        "rate": 0.6
+      },
+      "filter_compliance": {
+        "n": 0,
+        "N": 2,
+        "rate": 0.0
+      },
+      "queries_with_fewer_than_three_hits": 0
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "question_count": 15,
+      "hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "evidence_hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "filter_compliance": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "queries_with_fewer_than_three_hits": 0
+    },
+    {
+      "strategy": "C",
+      "split": "test",
+      "question_count": 5,
+      "hit1": {
+        "n": 2,
+        "N": 5,
+        "rate": 0.4
+      },
+      "evidence_hit3": {
+        "n": 3,
+        "N": 5,
+        "rate": 0.6
+      },
+      "filter_compliance": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "queries_with_fewer_than_three_hits": 0
+    }
+  ],
+  "complete_matrix_verified": true
+}

@@ -1,0 +1,42 @@
+{
+  "command": "starter/.venv/bin/python starter/scripts/prepare_corpus.py (from repository root)",
+  "files_before_migration": {
+    "data/raw/thinkpython2.pdf": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+    "data/corpus_config.json": "3e69f7013b208bc74283abd5e700d44247d7cea47ade9a508437c222a1fb27ad",
+    "data/manifest.json": "2f2c5b324092dd675b774b04044ace0ae82cde661a6b215f3c12e0e7b1f508c7",
+    "data/processed/pages.jsonl": "985bc9dca1cdbf0370fe31f66cf4c17798f0fda3de1078cf0aab6187efc74740",
+    "results/ingestion_errors.jsonl": "fdf68fff2e7a14065cbbc14ff0965698cbb1b2ed24d47a416dcb6522f60721c3"
+  },
+  "files_after": {
+    "data/raw/thinkpython2.pdf": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+    "data/corpus_config.json": "3e69f7013b208bc74283abd5e700d44247d7cea47ade9a508437c222a1fb27ad",
+    "data/manifest.json": "2f2c5b324092dd675b774b04044ace0ae82cde661a6b215f3c12e0e7b1f508c7",
+    "data/processed/pages.jsonl": "985bc9dca1cdbf0370fe31f66cf4c17798f0fda3de1078cf0aab6187efc74740",
+    "results/ingestion_errors.jsonl": "fdf68fff2e7a14065cbbc14ff0965698cbb1b2ed24d47a416dcb6522f60721c3"
+  },
+  "identical_content": true,
+  "trials": [
+    {
+      "working_directory": "/home/laitrongduc/Desktop/K5-L3B-DAY06-LaiTrongDuc-2A202604019-DataIngestion",
+      "exit_code": 0,
+      "matches_pre_migration_content": true,
+      "content_pages": 40,
+      "total_chars": 76707
+    },
+    {
+      "working_directory": "/home/laitrongduc/Desktop/K5-L3B-DAY06-LaiTrongDuc-2A202604019-DataIngestion/starter",
+      "exit_code": 0,
+      "matches_pre_migration_content": true,
+      "content_pages": 40,
+      "total_chars": 76707
+    },
+    {
+      "working_directory": "/tmp",
+      "exit_code": 0,
+      "matches_pre_migration_content": true,
+      "content_pages": 40,
+      "total_chars": 76707
+    }
+  ],
+  "note": "Paths are relative to repository root. run_at in ingestion_stats.json changes on rerun by design; vector-store idempotency has not been implemented or tested."
+}

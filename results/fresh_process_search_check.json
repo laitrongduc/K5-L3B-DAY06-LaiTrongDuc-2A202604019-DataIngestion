@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "fresh_process_search_verified": true,
+  "strategies": [
+    "A",
+    "B",
+    "C"
+  ],
+  "top_k": 3,
+  "c_chapter_filter": 2,
+  "purpose": "Unscored setup check; not dev/test benchmark"
+}

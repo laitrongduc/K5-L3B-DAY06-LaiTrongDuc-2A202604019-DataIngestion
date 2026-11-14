@@ -1,0 +1,73 @@
+{
+  "model": {
+    "model_name": "google/embeddinggemma-2",
+    "revision": "f9972ac22e696a105c482202646979e33e4b5a1e",
+    "dimensions": 768,
+    "dtype": "float32",
+    "device": "cpu",
+    "modalities": [
+      "text"
+    ],
+    "batch_size": 4,
+    "query_prefix": "task: search result | query: ",
+    "document_title": "Think Python: How to Think Like a Computer Scientist",
+    "vector_store": "qdrant_local",
+    "vector_store_path": "results/vector_store",
+    "cache_path": "starter/.venv/model_cache"
+  },
+  "libraries": {
+    "torch": "2.15.0+cpu",
+    "transformers": "5.23.0",
+    "sentence-transformers": "6.3.0",
+    "qdrant-client": "1.20.0"
+  },
+  "embedding_signature": "4a5d4929c6a757e1a6a18f803484b625cc5465f107185f5231b212dba2c11e5f",
+  "loaded_parameter_count": 271002624,
+  "verified_parameter_dtype": "float32",
+  "unused_modality_encoders_disabled": true,
+  "run_at": "2026-11-14T04:29:00.031747+00:00",
+  "model_load_seconds": 8.552471758999673,
+  "metric": "cosine",
+  "search_mode": "Qdrant local exact",
+  "strategies": {
+    "A": {
+      "chunk_count": 188,
+      "repeat_count": 188,
+      "embedding_seconds": 100.8181508029993,
+      "store_seconds": 0.31696892299987667,
+      "ingest_seconds": 101.13511972599917,
+      "collection": "day6_4a5d4929c6a757e1a6a18f803484b625cc5465f107185f5231b212dba2c11e5f_A",
+      "reingestion_without_duplicates": true
+    },
+    "B": {
+      "chunk_count": 206,
+      "repeat_count": 206,
+      "embedding_seconds": 137.50553330700131,
+      "store_seconds": 0.42739476499991724,
+      "ingest_seconds": 137.93292807200123,
+      "collection": "day6_4a5d4929c6a757e1a6a18f803484b625cc5465f107185f5231b212dba2c11e5f_B",
+      "reingestion_without_duplicates": true
+    },
+    "C": {
+      "chunk_count": 206,
+      "collection": "day6_4a5d4929c6a757e1a6a18f803484b625cc5465f107185f5231b212dba2c11e5f_B",
+      "reuses_vectors_from": "B",
+      "separate_embedding_performed": false
+    }
+  },
+  "paid_api_cost_usd": 0,
+  "cost_scope": "Local inference; hardware/electricity excluded",
+  "persistent_reopen_verified": true,
+  "token_counts": {
+    "document": {
+      "inputs": 394,
+      "total": 47689,
+      "max": 238
+    },
+    "query": {
+      "inputs": 1,
+      "total": 20,
+      "max": 20
+    }
+  }
+}

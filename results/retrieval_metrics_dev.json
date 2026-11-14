@@ -1,0 +1,105 @@
+{
+  "by_strategy_split": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "question_count": 15,
+      "hit1": {
+        "n": 3,
+        "N": 15,
+        "rate": 0.2
+      },
+      "evidence_hit3": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "filter_compliance": {
+        "n": 1,
+        "N": 2,
+        "rate": 0.5
+      },
+      "queries_with_fewer_than_three_hits": 0
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "question_count": 15,
+      "hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "evidence_hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "filter_compliance": {
+        "n": 1,
+        "N": 2,
+        "rate": 0.5
+      },
+      "queries_with_fewer_than_three_hits": 0
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "question_count": 15,
+      "hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "evidence_hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "filter_compliance": {
+        "n": 2,
+        "N": 2,
+        "rate": 1.0
+      },
+      "queries_with_fewer_than_three_hits": 0
+    }
+  ],
+  "complete_matrix_verified": true,
+  "split": "dev",
+  "started_at": "2026-11-14T04:59:45.257991+00:00",
+  "finished_at": "2026-11-14T04:59:45.835962+00:00",
+  "embedding_signature": "6a10d47f60be99ad23235faca7c2cee88a06d30cb788fe9dccd6971af2f7d2ce",
+  "model": {
+    "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "dimensions": 384,
+    "dtype": "float32",
+    "device": "cpu",
+    "batch_size": 16,
+    "max_tokens": 128,
+    "query_prefix": "",
+    "document_prefix": "",
+    "vector_store": "pgvector",
+    "database_url_env": "DATABASE_URL",
+    "cache_path": "starter/.venv/model_cache"
+  },
+  "libraries": {
+    "torch": "2.15.0+cpu",
+    "transformers": "5.23.0",
+    "sentence-transformers": "6.3.0",
+    "psycopg": "3.3.8"
+  },
+  "benchmark_freeze_sha256": "8a3abce994762325377f725fd8be7128934a5184f53afd0e2fb123ffc92016f3",
+  "model_load_seconds": 6.452731377999953,
+  "paid_api_cost_usd": 0,
+  "timing": {
+    "query_embedding_seconds_once_per_question": 0.4386763670008804,
+    "search_seconds_by_strategy": {
+      "A": 0.04263378100040427,
+      "B": 0.035643235001771245,
+      "C": 0.03433872199821053
+    },
+    "scope": "Sequential local setup run; query embeddings shared across A/B/C, no load test"
+  },
+  "trace_sha256": "65fcfc12966ff1b78ff9dbebd10046ae841bf442871f45894201bd9d34a3ec93"
+}

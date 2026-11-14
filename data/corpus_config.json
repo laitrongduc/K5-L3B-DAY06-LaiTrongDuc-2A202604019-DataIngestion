@@ -1,0 +1,24 @@
+{
+  "source_id": "think-python-2e-2.4.1",
+  "title": "Think Python: How to Think Like a Computer Scientist",
+  "author": "Allen B. Downey",
+  "version": "2nd Edition, Version 2.4.1",
+  "source_path": "data/raw/thinkpython2.pdf",
+  "source_url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+  "source_landing_page": "https://greenteapress.com/wp/think-python-2e/",
+  "license_or_permission": "CC BY-NC 3.0 Unported",
+  "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+  "license_evidence_pdf_page": 4,
+  "accessed_at": "2026-11-14T03:11:11Z",
+  "sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "language": "en",
+  "printed_page_offset": -22,
+  "selection": [
+    {"chapter": 2, "chapter_title": "Variables, expressions and statements", "pdf_start": 31, "pdf_end": 36},
+    {"chapter": 3, "chapter_title": "Functions", "pdf_start": 39, "pdf_end": 48},
+    {"chapter": 5, "chapter_title": "Conditionals and recursion", "pdf_start": 61, "pdf_end": 68},
+    {"chapter": 7, "chapter_title": "Iteration", "pdf_start": 85, "pdf_end": 90},
+    {"chapter": 10, "chapter_title": "Lists", "pdf_start": 111, "pdf_end": 115},
+    {"chapter": 11, "chapter_title": "Dictionaries", "pdf_start": 125, "pdf_end": 129}
+  ]
+}

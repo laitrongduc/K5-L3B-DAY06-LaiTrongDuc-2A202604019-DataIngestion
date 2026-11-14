@@ -1,0 +1,14 @@
+{
+  "benchmark_version": "1.0.0",
+  "frozen_at": "2026-11-14T03:35:36.822942+00:00",
+  "stage": "before_retrieval",
+  "sha256": {
+    "benchmark/questions.jsonl": "cb6e725d84b02d53285591f25e9bcd00c561d7c7f8ddb1bc612a3b3cc7f7b4f2",
+    "benchmark/protocol.json": "aa88d2346c983f06987c33964057a3f6db5c842c10d38176b3bc45edcd2e14ff",
+    "benchmark/coherence_samples.jsonl": "2f6fe696c7d2659d4f58934f8bb32492fc847de91a5f191d070176c9ffcb421b",
+    "data/corpus_config.json": "3e69f7013b208bc74283abd5e700d44247d7cea47ade9a508437c222a1fb27ad",
+    "data/manifest.json": "2f2c5b324092dd675b774b04044ace0ae82cde661a6b215f3c12e0e7b1f508c7",
+    "data/processed/pages.jsonl": "985bc9dca1cdbf0370fe31f66cf4c17798f0fda3de1078cf0aab6187efc74740",
+    "data/raw/thinkpython2.pdf": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94"
+  }
+}

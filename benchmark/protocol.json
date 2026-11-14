@@ -1,0 +1,113 @@
+{
+  "benchmark_version": "1.0.0",
+  "language": "en",
+  "minimum_questions": 20,
+  "expected_counts": {
+    "dev": 15,
+    "test": 5
+  },
+  "split_method": "Fixed topic split by source chapter before retrieval; no random seed is used.",
+  "chapters_by_split": {
+    "dev": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "test": [
+      10,
+      11
+    ]
+  },
+  "minimum_filter_questions": 3,
+  "minimum_test_filter_questions": 1,
+  "allowed_filter_fields": [
+    "chapter"
+  ],
+  "filter_policy": "Chapter is supplied explicitly in the question before retrieval. A/B ignore filters; C applies the supplied filter. C uses no filter when filter is null. Never derive filters from gold source/page/answer.",
+  "retrieval_contract": {
+    "query_text_field": "question",
+    "filter_field": "filter",
+    "top_k": 3,
+    "metric": "cosine",
+    "forbidden_query_inputs": [
+      "expected_answer",
+      "gold_source_id",
+      "gold_page",
+      "evidence_quote",
+      "alternative_gold_evidence",
+      "answer_support_reason"
+    ]
+  },
+  "controlled_factors": [
+    "corpus snapshot",
+    "embedding model and revision",
+    "query/document embedding processing",
+    "vector store",
+    "cosine metric",
+    "question set",
+    "gold evidence",
+    "top_k"
+  ],
+  "strategy_comparisons": {
+    "A_vs_B": "Change chunking only; same metadata and no filters.",
+    "B_vs_C": "Identical chunks and embeddings; change supplied metadata filtering only."
+  },
+  "selection_criteria_in_order": [
+    {
+      "metric": "dev_evidence_hit3",
+      "direction": "maximize"
+    },
+    {
+      "metric": "dev_hit1",
+      "direction": "maximize"
+    },
+    {
+      "metric": "ingest_seconds",
+      "direction": "minimize"
+    },
+    {
+      "metric": "chunk_count",
+      "direction": "minimize"
+    },
+    {
+      "metric": "strategy_id",
+      "direction": "ascending alphabetical order for exact remaining ties"
+    }
+  ],
+  "selection_policy": "Tune and select on dev only. Freeze final strategy configurations before running test. Grounding/coherence/metadata audits explain the choice and limitations; they do not trigger test-driven tuning.",
+  "evidence_policy": {
+    "required_hit": "A single returned chunk must match an accepted source/page and contain the complete evidence quote after NFC and whitespace folding, or equivalent sufficient evidence explicitly confirmed in an audit.",
+    "alternatives": "Accept any listed primary or alternative gold evidence. A newly discovered equivalent passage must be recorded as an explicit audit override with source/page/quote, reason and reviewer; apply the same rule across all strategies without tuning on test.",
+    "split_evidence": "Evidence spread across multiple chunks is a failure under the required single-chunk metric; optional multi-chunk analysis must be reported separately.",
+    "reporting": "Report Hit@1 and Evidence Hit@3 by split with numerator and denominator; keep full top-3 traces.",
+    "offsets": "0-based Python Unicode character offsets in normalized page text; end offset is exclusive."
+  },
+  "coherence_sampling": {
+    "sample_count": 10,
+    "page_policy": "First 10 included corpus pages sorted by document_id and numeric physical PDF page.",
+    "position_policy": "First paragraph of at least 100 characters on each page. Reference is first 160 characters of that paragraph. Anchor is paragraph start + min(80, paragraph length - 1).",
+    "chunk_selection": "Among chunks containing the anchor offset, choose the chunk whose midpoint is closest to the anchor; tie by smallest start_char, then chunk_id. Use the same positions for A/B/C.",
+    "missing_coverage": "Record as missing coverage with coherence 0 and a reason; do not silently drop the sample.",
+    "scale": {
+      "0": "Cut meaning or missing subject makes it unintelligible",
+      "1": "Partly understandable but lacks context",
+      "2": "Self-contained and preserves a complete idea"
+    },
+    "limitation": "The deterministic first-10-page sample covers early chapters only; it is not representative of all six chapters."
+  },
+  "future_manual_audits": {
+    "metadata": "Inspect all returned top-3 records for the 5 test questions per strategy; report correct-and-complete n/N. Report filter compliance separately, or N/A if no filter questions.",
+    "grounding": "For each of 5 test questions per strategy, score top-3 evidence 0/1/2 with reasons; report counts per level and mean /2. This is evidence sufficiency, not LLM answer accuracy.",
+    "coherence": "Apply the fixed 10 positions and 0/1/2 scale; publish selected chunks and reasons."
+  },
+  "review_method": "Questions, answers and evidence were authored and checked with Codex assistance. Source containment is checked programmatically; answer support is reviewed by the AI-assisted author, not an independent human judge. No retrieval scores or manual retrieval-audit labels exist yet.",
+  "limitations": [
+    "One English book and only 20 questions; test contains only 5 questions from two chapters.",
+    "Chapter-level split reduces topic overlap, but all questions share one book and basic concepts such as loops/functions recur across chapters.",
+    "The author necessarily knows test questions during dataset creation; the holdout refers to no test-based tuning, not author blindness.",
+    "Filter scopes are explicit chapter requests for this educational corpus; do not generalize filter gains to ambiguous user requests.",
+    "Historical Python edition: avoid claims about current dictionary ordering and range return types; benchmark only supported stable behavior.",
+    "No unanswerable questions are included in required metrics. Diagrams are not used as sole evidence."
+  ]
+}

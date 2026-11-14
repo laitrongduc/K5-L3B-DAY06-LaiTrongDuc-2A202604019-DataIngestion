@@ -1,0 +1,66 @@
+{
+  "source_pages": 40,
+  "source_chars": 76707,
+  "strategies_sha256": "c7377f23ed54bfac6691c54385341054c405802e9751c4229ff21bc3ea98be38",
+  "model_config_sha256": "2cd8b69e27bc6c416cfce0355b7d0444ae9496ec3f33490b3597e19d89fb6b80",
+  "max_tokens_including_special_tokens": 128,
+  "timing_scope": "chunking only; excludes embedding and database ingestion",
+  "strategies": {
+    "A": {
+      "config": {
+        "chunking": "fixed_size",
+        "size": 500,
+        "overlap": 50,
+        "use_question_filter": false
+      },
+      "chunks_file": "results/chunks_A.jsonl",
+      "chunk_count": 244,
+      "total_chars_including_overlap": 84107,
+      "min_chars": 1,
+      "median_chars": 465.0,
+      "mean_chars": 344.70081967213116,
+      "max_chars": 500,
+      "length_buckets": {
+        "1-100": 51,
+        "101-200": 20,
+        "201-300": 12,
+        "301-400": 19,
+        "401-500": 142
+      },
+      "chunking_seconds": 0.8946722979999322,
+      "max_tokens": 128
+    },
+    "B": {
+      "config": {
+        "chunking": "paragraph",
+        "max_size": 500,
+        "use_question_filter": false
+      },
+      "chunks_file": "results/chunks_B.jsonl",
+      "chunk_count": 229,
+      "total_chars_including_overlap": 76707,
+      "min_chars": 5,
+      "median_chars": 385,
+      "mean_chars": 334.9650655021834,
+      "max_chars": 500,
+      "length_buckets": {
+        "1-100": 26,
+        "101-200": 21,
+        "201-300": 31,
+        "301-400": 45,
+        "401-500": 106
+      },
+      "chunking_seconds": 0.3449004980011523,
+      "max_tokens": 128
+    },
+    "C": {
+      "config": {
+        "chunks_from": "B",
+        "use_question_filter": true
+      },
+      "chunks_file": "results/chunks_B.jsonl",
+      "chunk_count": 229,
+      "reuses_chunks_from": "B"
+    }
+  }
+}

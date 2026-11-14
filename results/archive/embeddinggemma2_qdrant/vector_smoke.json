@@ -1,0 +1,269 @@
+{
+  "question": "In Chapter 2, what is a Python variable?",
+  "purpose": "Unscored setup check, not dev/test evaluation",
+  "results": {
+    "A": {
+      "filter": null,
+      "hits": [
+        {
+          "chunk_id": "1ed89d629c51e3577b15b1953de4296b306c7bdbc3181aa32b6b946e0f1a462e",
+          "text": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n2.1    Assignment statements\nAn assignment statement creates a new variable and gives it a value:\n>>> message = 'And now for something completely different'\n>>> n = 17\n>>> pi = 3.1415926535897932\nThis example makes three assignments. The first assigns a string to a new variable named\nmessage; the second",
+          "score": 0.8261621444941998,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "printed_page": 9,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 500,
+            "header_removed": false,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 31,
+            "start_char": 0,
+            "end_char": 500,
+            "page_char_count": 1260,
+            "chunking": "fixed_size",
+            "chunk_parameters": {
+              "size": 500,
+              "overlap": 50
+            }
+          }
+        },
+        {
+          "chunk_id": "562e2adf0d5b42aa618af80070114bde38e71578de9037aadf72e8e4f65c8bf1",
+          "text": "string to a new variable named\nmessage; the second gives the integer 17 to n; the third assigns the (approximate) value of\nπ to pi.\nA common way to represent variables on paper is to write the name with an arrow pointing\nto its value. This kind of figure is called a state diagram because it shows what state each\nof the variables is in (think of it as the variable’s state of mind). Figure 2.1 shows the result\nof the previous example.\n\n2.2    Variable names\nProgrammers generally choose names for t",
+          "score": 0.7977477702435412,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "printed_page": 9,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 500,
+            "header_removed": false,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 31,
+            "start_char": 450,
+            "end_char": 950,
+            "page_char_count": 1260,
+            "chunking": "fixed_size",
+            "chunk_parameters": {
+              "size": 500,
+              "overlap": 50
+            }
+          }
+        },
+        {
+          "chunk_id": "16c4627a6f4215189ed345dcc05b23a237742e2ace6d3eb11fb7285c4016c258",
+          "text": "2.9      Glossary\nvariable: A name that refers to a value.\n\nassignment: A statement that assigns a value to a variable.\n\nstate diagram: A graphical representation of a set of variables and the values they refer to.\n\nkeyword: A reserved word that is used to parse a program; you cannot use keywords like\n    if, def, and while as variable names.\n\noperand: One of the values on which an operator operates.\n\nexpression: A combination of variables, operators, and values that represents a single re-\n    ",
+          "score": 0.7809021246819526,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-036",
+            "printed_page": 14,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 500,
+            "header_removed": true,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 36,
+            "start_char": 0,
+            "end_char": 500,
+            "page_char_count": 1969,
+            "chunking": "fixed_size",
+            "chunk_parameters": {
+              "size": 500,
+              "overlap": 50
+            }
+          }
+        }
+      ]
+    },
+    "B": {
+      "filter": null,
+      "hits": [
+        {
+          "chunk_id": "e40549421037e8cfd93da3ca3b5c218b1ddc3a6d4fea6cc32f4a3bcb53d34414",
+          "text": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n",
+          "score": 0.8806530187683219,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "printed_page": 9,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 196,
+            "header_removed": false,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 31,
+            "start_char": 0,
+            "end_char": 196,
+            "page_char_count": 1260,
+            "chunking": "paragraph",
+            "chunk_parameters": {
+              "max_size": 500
+            }
+          }
+        },
+        {
+          "chunk_id": "0b9ab8ae5f6cfb9f0b3e1178326bea8d6edd5e0556f5fe78cc709ec95acf30bc",
+          "text": "to its value. This kind of figure is called a state diagram because it shows what state each\nof the variables is in (think of it as the variable’s state of mind). Figure 2.1 shows the result\nof the previous example.\n\n2.2    Variable names\nProgrammers generally choose names for their variables that are meaningful—they docu-\nment what the variable is used for.\n\n",
+          "score": 0.7912739113399327,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "printed_page": 9,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 362,
+            "header_removed": false,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 31,
+            "start_char": 671,
+            "end_char": 1033,
+            "page_char_count": 1260,
+            "chunking": "paragraph",
+            "chunk_parameters": {
+              "max_size": 500
+            }
+          }
+        },
+        {
+          "chunk_id": "4894946b07d4e33e9c930d416c11b74e42b9bfab524432a2c2bebbbc15cff767",
+          "text": "2.9      Glossary\nvariable: A name that refers to a value.\n\nassignment: A statement that assigns a value to a variable.\n\nstate diagram: A graphical representation of a set of variables and the values they refer to.\n\nkeyword: A reserved word that is used to parse a program; you cannot use keywords like\n    if, def, and while as variable names.\n\noperand: One of the values on which an operator operates.\n\n",
+          "score": 0.7879040171599467,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-036",
+            "printed_page": 14,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 405,
+            "header_removed": true,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 36,
+            "start_char": 0,
+            "end_char": 405,
+            "page_char_count": 1969,
+            "chunking": "paragraph",
+            "chunk_parameters": {
+              "max_size": 500
+            }
+          }
+        }
+      ]
+    },
+    "C": {
+      "filter": {
+        "chapter": 2
+      },
+      "hits": [
+        {
+          "chunk_id": "e40549421037e8cfd93da3ca3b5c218b1ddc3a6d4fea6cc32f4a3bcb53d34414",
+          "text": "Chapter 2\n\nVariables, expressions and\nstatements\n\nOne of the most powerful features of a programming language is the ability to manipulate\nvariables. A variable is a name that refers to a value.\n\n",
+          "score": 0.8806530187683219,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "printed_page": 9,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 196,
+            "header_removed": false,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 31,
+            "start_char": 0,
+            "end_char": 196,
+            "page_char_count": 1260,
+            "chunking": "paragraph",
+            "chunk_parameters": {
+              "max_size": 500
+            }
+          }
+        },
+        {
+          "chunk_id": "0b9ab8ae5f6cfb9f0b3e1178326bea8d6edd5e0556f5fe78cc709ec95acf30bc",
+          "text": "to its value. This kind of figure is called a state diagram because it shows what state each\nof the variables is in (think of it as the variable’s state of mind). Figure 2.1 shows the result\nof the previous example.\n\n2.2    Variable names\nProgrammers generally choose names for their variables that are meaningful—they docu-\nment what the variable is used for.\n\n",
+          "score": 0.7912739113399327,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-031",
+            "printed_page": 9,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 362,
+            "header_removed": false,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 31,
+            "start_char": 671,
+            "end_char": 1033,
+            "page_char_count": 1260,
+            "chunking": "paragraph",
+            "chunk_parameters": {
+              "max_size": 500
+            }
+          }
+        },
+        {
+          "chunk_id": "4894946b07d4e33e9c930d416c11b74e42b9bfab524432a2c2bebbbc15cff767",
+          "text": "2.9      Glossary\nvariable: A name that refers to a value.\n\nassignment: A statement that assigns a value to a variable.\n\nstate diagram: A graphical representation of a set of variables and the values they refer to.\n\nkeyword: A reserved word that is used to parse a program; you cannot use keywords like\n    if, def, and while as variable names.\n\noperand: One of the values on which an operator operates.\n\n",
+          "score": 0.7879040171599467,
+          "metadata": {
+            "extraction_backend": "poppler-layout",
+            "page_id": "think-python-2e-2.4.1:pdf-036",
+            "printed_page": 14,
+            "chapter": 2,
+            "chapter_title": "Variables, expressions and statements",
+            "language": "en",
+            "version": "2nd Edition, Version 2.4.1",
+            "source_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+            "char_count": 405,
+            "header_removed": true,
+            "document_id": "think-python-2e-2.4.1",
+            "source": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+            "page": 36,
+            "start_char": 0,
+            "end_char": 405,
+            "page_char_count": 1969,
+            "chunking": "paragraph",
+            "chunk_parameters": {
+              "max_size": 500
+            }
+          }
+        }
+      ]
+    }
+  }
+}

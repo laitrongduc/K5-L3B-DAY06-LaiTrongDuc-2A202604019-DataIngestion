@@ -1,0 +1,709 @@
+{
+  "reviewer": "Codex (AI assistant)",
+  "review_method": "Direct qualitative reading of all 20 distinct A/B coherence chunks and all 15 test top-3 traces, with source-linked packets and PDF re-extraction. C coherence inherits identical B chunks. Semantic labels are explicitly AI-reviewed, not independent human manual labels; the student has not confirmed them. No separate LLM judge API was called.",
+  "human_confirmation": "pending",
+  "reviewed_at": "2026-11-14T05:03:49.467660+00:00",
+  "audit_packets_sha256": "ff43c70de8c8e5c0f987553df8f0683145ffbe1f76cc501235164aab1defc7a6",
+  "evidence_override_policy": "No gold/equivalence overrides. Required retrieval metrics retain frozen complete-quote single-chunk matching; semantic sufficiency is assessed separately in grounding.",
+  "coherence": [
+    {
+      "strategy": "A",
+      "sample_id": "c01",
+      "chunk_id": "1ed89d629c51e3577b15b1953de4296b306c7bdbc3181aa32b6b946e0f1a462e",
+      "score": 1,
+      "reason": "Định nghĩa biến và phép gán hiểu được, nhưng cuối chunk cắt giữa câu giải thích các phép gán tại “the second”."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c01",
+      "chunk_id": "e40549421037e8cfd93da3ca3b5c218b1ddc3a6d4fea6cc32f4a3bcb53d34414",
+      "score": 2,
+      "reason": "Giữ trọn định nghĩa biến cùng tiêu đề chương; có chủ thể và vị ngữ, không mang theo phần ví dụ bị cắt."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c01",
+      "chunk_id": "e40549421037e8cfd93da3ca3b5c218b1ddc3a6d4fea6cc32f4a3bcb53d34414",
+      "score": 2,
+      "reason": "Giữ trọn định nghĩa biến cùng tiêu đề chương; có chủ thể và vị ngữ, không mang theo phần ví dụ bị cắt. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c02",
+      "chunk_id": "29b01fad9fb5b1ce806ac68afe1ffa74407ce54f97ec47d06f500156ccd8fb14",
+      "score": 1,
+      "reason": "Quy tắc tên biến đủ rõ; ví dụ tên sai bị dừng ngay sau phép gán, thiếu dòng SyntaxError nên phần cuối chưa trọn ý."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c02",
+      "chunk_id": "6179c2b3e20383b917256e52341a729358cf6a6fa76012813b5fc75cbef05df9",
+      "score": 1,
+      "reason": "Giống A tại vị trí này: quy tắc tên rõ nhưng ví dụ tên sai thiếu dòng lỗi sau khi chia để vừa 128 token."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c02",
+      "chunk_id": "6179c2b3e20383b917256e52341a729358cf6a6fa76012813b5fc75cbef05df9",
+      "score": 1,
+      "reason": "Giống A tại vị trí này: quy tắc tên rõ nhưng ví dụ tên sai thiếu dòng lỗi sau khi chia để vừa 128 token. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c03",
+      "chunk_id": "dde31553e07bcbc537646fc41dcb6c571e753e2b6bd28eaae0366eccfd2b3018",
+      "score": 1,
+      "reason": "“The first line/second line” tham chiếu code ở trang trước; đoạn script mode lại bị cắt tại “more than”, cần thêm ngữ cảnh."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c03",
+      "chunk_id": "299d97137d3cc4cbc084d09f718de36d719114dc8ecf771c12655f02f9bf1d20",
+      "score": 1,
+      "reason": "Giữ trọn các câu về statement, nhưng “first line/second line” vẫn cần code ở trang trước; chunking không khôi phục ngữ cảnh xuyên trang."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c03",
+      "chunk_id": "299d97137d3cc4cbc084d09f718de36d719114dc8ecf771c12655f02f9bf1d20",
+      "score": 1,
+      "reason": "Giữ trọn các câu về statement, nhưng “first line/second line” vẫn cần code ở trang trước; chunking không khôi phục ngữ cảnh xuyên trang. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c04",
+      "chunk_id": "febba5e5f2f7d59e71ff4cb065062a589b14bab05b45b1a11f7f1c21051e512a",
+      "score": 1,
+      "reason": "Hai quy tắc precedence có ví dụ đủ, nhưng kết thúc bằng một bullet rỗng của quy tắc tiếp theo."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c04",
+      "chunk_id": "ae49ba38cc00a97875a0881cc073cb7f09b0bda6216f57032bcf10541464008d",
+      "score": 2,
+      "reason": "Giữ trọn hai bullet về parentheses/exponentiation và các ví dụ; không kéo theo bullet tiếp theo."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c04",
+      "chunk_id": "ae49ba38cc00a97875a0881cc073cb7f09b0bda6216f57032bcf10541464008d",
+      "score": 2,
+      "reason": "Giữ trọn hai bullet về parentheses/exponentiation và các ví dụ; không kéo theo bullet tiếp theo. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c05",
+      "chunk_id": "af37119dd466708e41e78f27b97605d183e1cfa315d4bd3c380f2072ab16facd",
+      "score": 1,
+      "reason": "Có định nghĩa và ví dụ comment; câu quy tắc ký tự sau # bị cắt giữa từ “is ignored”, nên chunk chưa trọn ý."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c05",
+      "chunk_id": "1189f9e45a67ec751700d380e3dbd153aa529b708c34d069d2f221bd2ed98b68",
+      "score": 2,
+      "reason": "Định nghĩa comment và hai vị trí đặt comment đều có ví dụ hoàn chỉnh; câu mở đầu không làm mất nghĩa trọng tâm."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c05",
+      "chunk_id": "1189f9e45a67ec751700d380e3dbd153aa529b708c34d069d2f221bd2ed98b68",
+      "score": 2,
+      "reason": "Định nghĩa comment và hai vị trí đặt comment đều có ví dụ hoàn chỉnh; câu mở đầu không làm mất nghĩa trọng tâm. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c06",
+      "chunk_id": "16c4627a6f4215189ed345dcc05b23a237742e2ace6d3eb11fb7285c4016c258",
+      "score": 1,
+      "reason": "Các mục glossary đầu đủ nghĩa; định nghĩa expression bị dừng tại “single re-”, không giữ trọn mục cuối."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c06",
+      "chunk_id": "4894946b07d4e33e9c930d416c11b74e42b9bfab524432a2c2bebbbc15cff767",
+      "score": 2,
+      "reason": "Các mục variable, assignment, state diagram, keyword, operand đều là các định nghĩa hoàn chỉnh."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c06",
+      "chunk_id": "4894946b07d4e33e9c930d416c11b74e42b9bfab524432a2c2bebbbc15cff767",
+      "score": 2,
+      "reason": "Các mục variable, assignment, state diagram, keyword, operand đều là các định nghĩa hoàn chỉnh. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c07",
+      "chunk_id": "80a3290e8b19b33a53da754efac52ca8e7f64b22a3b41efdec594bf1f12af903",
+      "score": 1,
+      "reason": "Định nghĩa function đầy đủ nhưng phần function call ở cuối bị cắt giữa “type”, khiến giải thích kết quả chưa xong."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c07",
+      "chunk_id": "66b58678df96b78d57a550084019bde927060ba6df7978c162a7c72775e805fd",
+      "score": 2,
+      "reason": "Đoạn định nghĩa function giữ đủ thao tác define/name/call, đọc độc lập được."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c07",
+      "chunk_id": "66b58678df96b78d57a550084019bde927060ba6df7978c162a7c72775e805fd",
+      "score": 2,
+      "reason": "Đoạn định nghĩa function giữ đủ thao tác define/name/call, đọc độc lập được. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c08",
+      "chunk_id": "4b6b8559f3a7ba76b92ae28e23f618b73f4b4d8eea9690dd4d87d7664d84e422",
+      "score": 1,
+      "reason": "Có khái niệm module/import nhưng đoạn hiển thị module object dừng tại “>>”, thiếu ví dụ tiếp theo."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c08",
+      "chunk_id": "96a518ee97eeae313b46c71931b1d4aaacbef39b0e70167a20f1441d654b3699",
+      "score": 2,
+      "reason": "Ví dụ str hoàn chỉnh và định nghĩa math module/module đều đủ câu, không có phần import dang dở."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c08",
+      "chunk_id": "96a518ee97eeae313b46c71931b1d4aaacbef39b0e70167a20f1441d654b3699",
+      "score": 2,
+      "reason": "Ví dụ str hoàn chỉnh và định nghĩa math module/module đều đủ câu, không có phần import dang dở. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c09",
+      "chunk_id": "24c10cd2fdad61c1982f82f6d68fe383e034be96a9a48a923a3ba030aff9b5a2",
+      "score": 1,
+      "reason": "Hai ví dụ composition có đủ code; từ “Almost” mở câu cuối nhưng phần giải thích đã bị cắt."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c09",
+      "chunk_id": "657032aefa389efbeec9735ab31ddfc8101cd0e085bf0e9ac0335443de765754",
+      "score": 2,
+      "reason": "Giữ đủ giải thích composition và hai ví dụ biểu thức/lời gọi hàm, kết thúc sau code hoàn chỉnh."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c09",
+      "chunk_id": "657032aefa389efbeec9735ab31ddfc8101cd0e085bf0e9ac0335443de765754",
+      "score": 2,
+      "reason": "Giữ đủ giải thích composition và hai ví dụ biểu thức/lời gọi hàm, kết thúc sau code hoàn chỉnh. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    },
+    {
+      "strategy": "A",
+      "sample_id": "c10",
+      "chunk_id": "606e8c1a0814f7c670aa0555d06b73cc405ecb4570450597ef37d50bef75585e",
+      "score": 1,
+      "reason": "Định nghĩa print_lyrics và type đủ rõ, nhưng câu cuối về cách gọi hàm bị dừng tại “the same”."
+    },
+    {
+      "strategy": "B",
+      "sample_id": "c10",
+      "chunk_id": "fa2eb0485ae1a00d0c8dfe2b4246e2ed2474f001fc2601bffedeeae0ac6d0d49",
+      "score": 2,
+      "reason": "Giữ nguyên định nghĩa hàm và hướng dẫn kết thúc bằng dòng trống; không kéo theo câu gọi hàm chưa xong."
+    },
+    {
+      "strategy": "C",
+      "sample_id": "c10",
+      "chunk_id": "fa2eb0485ae1a00d0c8dfe2b4246e2ed2474f001fc2601bffedeeae0ac6d0d49",
+      "score": 2,
+      "reason": "Giữ nguyên định nghĩa hàm và hướng dẫn kết thúc bằng dòng trống; không kéo theo câu gọi hàm chưa xong. C dùng đúng chunk B, nên đây không phải một quan sát độc lập."
+    }
+  ],
+  "grounding": [
+    {
+      "strategy": "A",
+      "question_id": "q16",
+      "score": 2,
+      "supporting_ranks": [
+        1
+      ],
+      "reason": "Rank 1 trang PDF 113 nêu rõ nested list tính là một phần tử và có ví dụ list dài bốn."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q16",
+      "score": 2,
+      "supporting_ranks": [
+        1
+      ],
+      "reason": "Rank 1 trang 113 chứa trọn quy tắc nested list là một phần tử và ví dụ độ dài bốn."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q16",
+      "score": 2,
+      "supporting_ranks": [
+        1
+      ],
+      "reason": "Không có filter nên trace giống B; rank 1 trang 113 đủ quy tắc nested list và ví dụ."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q17",
+      "score": 2,
+      "supporting_ranks": [
+        1,
+        2
+      ],
+      "reason": "Rank 1 trang 114 nêu sửa list và trả None cùng cảnh báo t = t.sort(); rank 2 cung cấp ví dụ sort. Đủ giải thích mất tham chiếu list."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q17",
+      "score": 2,
+      "supporting_ranks": [
+        1
+      ],
+      "reason": "Rank 1 trang 114 có ví dụ sort hoàn chỉnh, trả None và cảnh báo gán t = t.sort(); đủ trả lời và truy nguồn."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q17",
+      "score": 2,
+      "supporting_ranks": [
+        1
+      ],
+      "reason": "Filter chapter 10 loại đoạn chapter 11 nhưng bằng chứng sort ở rank 1 trang 114 giữ nguyên và đủ."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q18",
+      "score": 2,
+      "supporting_ranks": [
+        1,
+        2
+      ],
+      "reason": "Rank 1 trang 126 còn mệnh đề chỉ key, không chấp nhận chỉ là value, kèm kết quả one/uno. Rank 2 bổ sung chủ đề dictionary/in ở ranh giới. Top-3 đủ grounding dù không chunk nào chứa nguyên gold quote; không cộng hit tự động."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q18",
+      "score": 2,
+      "supporting_ranks": [
+        2
+      ],
+      "reason": "Rank 2 trang 126 nêu nguyên quy tắc in kiểm tra key và chỉ là value thì không đủ, kèm ví dụ True/False."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q18",
+      "score": 2,
+      "supporting_ranks": [
+        2
+      ],
+      "reason": "Filter chapter 11 loại đoạn list của B; rank 2 trang 126 vẫn là bằng chứng đầy đủ về key/value."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q19",
+      "score": 0,
+      "supporting_ranks": [],
+      "reason": "Top-3 chỉ nói membership, index và biểu diễn key-value ở trang 125–126; không có get hoặc nhánh trả default tại trang 127."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q19",
+      "score": 0,
+      "supporting_ranks": [],
+      "reason": "Không có phương thức get/default trong top-3. Đoạn KeyError là truy cập bằng ngoặc vuông, không được dùng để suy diễn sai hành vi get."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q19",
+      "score": 0,
+      "supporting_ranks": [],
+      "reason": "Câu không yêu cầu filter nên trace giống B; vẫn không lấy được get/default tại trang 127."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q20",
+      "score": 0,
+      "supporting_ranks": [],
+      "reason": "Top-3 trang 125–126 không nêu nhiều key có cùng value hay thiếu cú pháp reverse lookup; thiếu cả hai khó khăn cần hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q20",
+      "score": 0,
+      "supporting_ranks": [],
+      "reason": "Các đoạn mapping/membership không cung cấp hai khó khăn của reverse lookup. Không dùng kiến thức ngoài trace để bù bằng chứng."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q20",
+      "score": 0,
+      "supporting_ranks": [],
+      "reason": "Câu không yêu cầu filter nên trace giống B; không có bằng chứng về hai vấn đề reverse lookup tại trang 128."
+    }
+  ],
+  "metadata": [
+    {
+      "strategy": "A",
+      "question_id": "q16",
+      "rank": 1,
+      "chunk_id": "339beaaae7463b6bb48df1bc268ed515582b9c41cbc6a4be08c65b528626b8e5",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 113 ↔ trang in 91, chapter 10 với header nguồn và manifest; text khớp span [900, 1262). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q16",
+      "rank": 2,
+      "chunk_id": "940f1009411e142fac229fd5077a0f4ff4129fdda7cc4072a734bd6a9ba91f2e",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 111 ↔ trang in 89, chapter 10 với header nguồn và manifest; text khớp span [836, 950). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q16",
+      "rank": 3,
+      "chunk_id": "d774fea08fe056e08cba8b4fcd642b5a0737eb7d5c51a0f15a76da9f2978d1b6",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 111 ↔ trang in 89, chapter 10 với header nguồn và manifest; text khớp span [0, 500). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q16",
+      "rank": 1,
+      "chunk_id": "2bc266ba7e116b0870156d173de8dc6eb6a2c9f8175fd8987628cfdc7498688c",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 113 ↔ trang in 91, chapter 10 với header nguồn và manifest; text khớp span [821, 1104). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q16",
+      "rank": 2,
+      "chunk_id": "4e351cb43f18f6440900284e0aa1654850c14a382f4270735b849c52a0dfcf14",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 111 ↔ trang in 89, chapter 10 với header nguồn và manifest; text khớp span [828, 885). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q16",
+      "rank": 3,
+      "chunk_id": "c8bcf027fc93d5bf24280a4ef911cc3b28a0065c5573959a37ba8dfef00cd8d1",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [623, 939). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q16",
+      "rank": 1,
+      "chunk_id": "2bc266ba7e116b0870156d173de8dc6eb6a2c9f8175fd8987628cfdc7498688c",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 113 ↔ trang in 91, chapter 10 với header nguồn và manifest; text khớp span [821, 1104). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q16",
+      "rank": 2,
+      "chunk_id": "4e351cb43f18f6440900284e0aa1654850c14a382f4270735b849c52a0dfcf14",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 111 ↔ trang in 89, chapter 10 với header nguồn và manifest; text khớp span [828, 885). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q16",
+      "rank": 3,
+      "chunk_id": "c8bcf027fc93d5bf24280a4ef911cc3b28a0065c5573959a37ba8dfef00cd8d1",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [623, 939). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q17",
+      "rank": 1,
+      "chunk_id": "5ad2253d4973dcefe875517c8282e31dbb3cbb25599cfc09c350fc7e3b66b9e2",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [1143, 1305). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q17",
+      "rank": 2,
+      "chunk_id": "2769acb55e1fc89945a9b3ff1a180d3545f98b04e462daec13583b1d8e4f3097",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [900, 1143). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q17",
+      "rank": 3,
+      "chunk_id": "f0855f1acaf7549b2969a525b717691a14079be40f05e5f67e257a39661442b5",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [1364, 1400). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q17",
+      "rank": 1,
+      "chunk_id": "6df122476a0ba09dc8b4cb4c02391c1712105a11be45dfcc024e833f5510fc60",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [1022, 1305). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q17",
+      "rank": 2,
+      "chunk_id": "97116255883508508b6d168ff0ad425c8130923cd091137b2237163cca453f6f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [939, 1022). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q17",
+      "rank": 3,
+      "chunk_id": "c25b51d45d6ced72ffe369bd34b23c0fadd272f51982349a79df41d833c1ed96",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 128 ↔ trang in 106, chapter 11 với header nguồn và manifest; text khớp span [541, 631). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q17",
+      "rank": 1,
+      "chunk_id": "6df122476a0ba09dc8b4cb4c02391c1712105a11be45dfcc024e833f5510fc60",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [1022, 1305). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q17",
+      "rank": 2,
+      "chunk_id": "97116255883508508b6d168ff0ad425c8130923cd091137b2237163cca453f6f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [939, 1022). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q17",
+      "rank": 3,
+      "chunk_id": "eb172ce103e71f92575905727320d4b7a6934f7d637d4c36cb35fc00cb053265",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 114 ↔ trang in 92, chapter 10 với header nguồn và manifest; text khớp span [264, 441). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q18",
+      "rank": 1,
+      "chunk_id": "918e00e573997bc6387baaffbbdab28ab0e6de83a04473bcfd378440a5f10485",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [900, 1364). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q18",
+      "rank": 2,
+      "chunk_id": "710faf6d01bae25ad3387344fe370342490dc6262e37cfd0645161b7e3c6837b",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [450, 857). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q18",
+      "rank": 3,
+      "chunk_id": "5489a395c81dd37f3d131b1968f488a5a94a58551346b30d41f87c1243a3a1f1",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [1350, 1850). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q18",
+      "rank": 1,
+      "chunk_id": "2767ebe480a52b40f561971bf2401169e43ea7b7281f1ed90efedd2ce1dcf106",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [1129, 1478). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q18",
+      "rank": 2,
+      "chunk_id": "dde853212c2adecfd1d68d57491b783f5e22070cef59adfbf898cd20f522cbb4",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [647, 1070). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q18",
+      "rank": 3,
+      "chunk_id": "cc8a55afc248e8c856e5052869685ed56b40bea70c20c11bb88c8ad24b0b2a5c",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 112 ↔ trang in 90, chapter 10 với header nguồn và manifest; text khớp span [606, 1099). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q18",
+      "rank": 1,
+      "chunk_id": "2767ebe480a52b40f561971bf2401169e43ea7b7281f1ed90efedd2ce1dcf106",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [1129, 1478). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q18",
+      "rank": 2,
+      "chunk_id": "dde853212c2adecfd1d68d57491b783f5e22070cef59adfbf898cd20f522cbb4",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [647, 1070). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q18",
+      "rank": 3,
+      "chunk_id": "b46f66b104226bae38df519bd3aa7e00fd4b9e4582375b14697fa764161b3855",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [1478, 1973). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q19",
+      "rank": 1,
+      "chunk_id": "ff6e2bf4f3e7b479344b9040a50be95abf99952294006e88e2841ead289b34e3",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [857, 950). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q19",
+      "rank": 2,
+      "chunk_id": "ef8e0b6d5631cef832984ff2a0f0945446d9822cadd387b8bd995dd23adeff0f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [352, 500). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q19",
+      "rank": 3,
+      "chunk_id": "0c8f2e955ee5f79aaeeb0e4712b13811585c66cb0834d9566f92dd2cc810cd7b",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [1299, 1400). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q19",
+      "rank": 1,
+      "chunk_id": "dde853212c2adecfd1d68d57491b783f5e22070cef59adfbf898cd20f522cbb4",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [647, 1070). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q19",
+      "rank": 2,
+      "chunk_id": "378d799dc83fefbea060afba6c01e5c90269cb351c6d7b2b3f10dc6a13abbc5f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [1299, 1513). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q19",
+      "rank": 3,
+      "chunk_id": "be79496eda23bb6acdb0e0bbbba6cd69f062e6c6767b9837b822351e23cadc19",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [1070, 1129). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q19",
+      "rank": 1,
+      "chunk_id": "dde853212c2adecfd1d68d57491b783f5e22070cef59adfbf898cd20f522cbb4",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [647, 1070). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q19",
+      "rank": 2,
+      "chunk_id": "378d799dc83fefbea060afba6c01e5c90269cb351c6d7b2b3f10dc6a13abbc5f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [1299, 1513). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q19",
+      "rank": 3,
+      "chunk_id": "be79496eda23bb6acdb0e0bbbba6cd69f062e6c6767b9837b822351e23cadc19",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [1070, 1129). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q20",
+      "rank": 1,
+      "chunk_id": "ff6e2bf4f3e7b479344b9040a50be95abf99952294006e88e2841ead289b34e3",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [857, 950). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q20",
+      "rank": 2,
+      "chunk_id": "0c8f2e955ee5f79aaeeb0e4712b13811585c66cb0834d9566f92dd2cc810cd7b",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [1299, 1400). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "A",
+      "question_id": "q20",
+      "rank": 3,
+      "chunk_id": "ef8e0b6d5631cef832984ff2a0f0945446d9822cadd387b8bd995dd23adeff0f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [352, 500). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q20",
+      "rank": 1,
+      "chunk_id": "dde853212c2adecfd1d68d57491b783f5e22070cef59adfbf898cd20f522cbb4",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [647, 1070). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q20",
+      "rank": 2,
+      "chunk_id": "378d799dc83fefbea060afba6c01e5c90269cb351c6d7b2b3f10dc6a13abbc5f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [1299, 1513). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "B",
+      "question_id": "q20",
+      "rank": 3,
+      "chunk_id": "e3b345993419c9923eb48d431a83613e7f060f721f56bb2b3a43b1098798537f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [387, 876). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q20",
+      "rank": 1,
+      "chunk_id": "dde853212c2adecfd1d68d57491b783f5e22070cef59adfbf898cd20f522cbb4",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 126 ↔ trang in 104, chapter 11 với header nguồn và manifest; text khớp span [647, 1070). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q20",
+      "rank": 2,
+      "chunk_id": "378d799dc83fefbea060afba6c01e5c90269cb351c6d7b2b3f10dc6a13abbc5f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [1299, 1513). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    },
+    {
+      "strategy": "C",
+      "question_id": "q20",
+      "rank": 3,
+      "chunk_id": "e3b345993419c9923eb48d431a83613e7f060f721f56bb2b3a43b1098798537f",
+      "complete_and_correct": true,
+      "reason": "Đối chiếu URL/ID nguồn, PDF page 125 ↔ trang in 103, chapter 11 với header nguồn và manifest; text khớp span [387, 876). Có đủ trường truy nguồn và chapter; metadata đúng không đồng nghĩa passage liên quan câu hỏi."
+    }
+  ]
+}
