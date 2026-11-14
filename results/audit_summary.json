@@ -1,0 +1,79 @@
+{
+  "reviewer": "Codex (AI assistant)",
+  "review_method": "Direct qualitative reading of all 20 distinct A/B coherence chunks and all 15 test top-3 traces, with source-linked packets and PDF re-extraction. C coherence inherits identical B chunks. Semantic labels are explicitly AI-reviewed, not independent human manual labels; the student has not confirmed them. No separate LLM judge API was called.",
+  "human_confirmation": "pending",
+  "by_strategy": {
+    "A": {
+      "coherence": {
+        "n": 10,
+        "counts_0_1_2": {
+          "0": 0,
+          "1": 10,
+          "2": 0
+        },
+        "mean_out_of_2": 1.0
+      },
+      "grounding": {
+        "n": 5,
+        "counts_0_1_2": {
+          "0": 2,
+          "1": 0,
+          "2": 3
+        },
+        "mean_out_of_2": 1.2
+      },
+      "metadata_complete_and_correct": {
+        "n": 15,
+        "N": 15
+      }
+    },
+    "B": {
+      "coherence": {
+        "n": 10,
+        "counts_0_1_2": {
+          "0": 0,
+          "1": 2,
+          "2": 8
+        },
+        "mean_out_of_2": 1.8
+      },
+      "grounding": {
+        "n": 5,
+        "counts_0_1_2": {
+          "0": 2,
+          "1": 0,
+          "2": 3
+        },
+        "mean_out_of_2": 1.2
+      },
+      "metadata_complete_and_correct": {
+        "n": 15,
+        "N": 15
+      }
+    },
+    "C": {
+      "coherence": {
+        "n": 10,
+        "counts_0_1_2": {
+          "0": 0,
+          "1": 2,
+          "2": 8
+        },
+        "mean_out_of_2": 1.8
+      },
+      "grounding": {
+        "n": 5,
+        "counts_0_1_2": {
+          "0": 2,
+          "1": 0,
+          "2": 3
+        },
+        "mean_out_of_2": 1.2
+      },
+      "metadata_complete_and_correct": {
+        "n": 15,
+        "N": 15
+      }
+    }
+  }
+}

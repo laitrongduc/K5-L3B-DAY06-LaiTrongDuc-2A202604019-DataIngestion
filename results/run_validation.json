@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-14T05:15:14.515238+00:00",
+  "frozen_snapshot_verified": true,
+  "selection_lock_verified": true,
+  "selection_before_test_verified": true,
+  "selected_strategy": "B",
+  "trace_count": 60,
+  "returned_records": 180,
+  "complete_audit_matrices": {
+    "coherence": 30,
+    "grounding": 15,
+    "metadata": 45
+  },
+  "unfiltered_B_C_identity_questions": 16,
+  "source_reextraction_pages": [
+    111,
+    112,
+    113,
+    114,
+    125,
+    126,
+    128
+  ],
+  "human_confirmation": "pending",
+  "scope": "Validates artifacts and arithmetic; does not claim independent human judgment or remote submission"
+}

@@ -1,0 +1,14 @@
+{
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "dimensions": 384,
+  "dtype": "float32",
+  "device": "cpu",
+  "batch_size": 16,
+  "max_tokens": 128,
+  "query_prefix": "",
+  "document_prefix": "",
+  "vector_store": "pgvector",
+  "database_url_env": "DATABASE_URL",
+  "cache_path": "starter/.venv/model_cache"
+}

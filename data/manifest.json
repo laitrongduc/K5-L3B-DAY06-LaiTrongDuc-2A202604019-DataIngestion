@@ -1,0 +1,2044 @@
+{
+  "source_id": "think-python-2e-2.4.1",
+  "title": "Think Python: How to Think Like a Computer Scientist",
+  "author": "Allen B. Downey",
+  "version": "2nd Edition, Version 2.4.1",
+  "source_path": "data/raw/thinkpython2.pdf",
+  "source_url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+  "source_landing_page": "https://greenteapress.com/wp/think-python-2e/",
+  "license_or_permission": "CC BY-NC 3.0 Unported",
+  "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+  "license_evidence_pdf_page": 4,
+  "accessed_at": "2026-11-14T03:11:11Z",
+  "sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "language": "en",
+  "printed_page_offset": -22,
+  "selection": [
+    {
+      "chapter": 2,
+      "chapter_title": "Variables, expressions and statements",
+      "pdf_start": 31,
+      "pdf_end": 36
+    },
+    {
+      "chapter": 3,
+      "chapter_title": "Functions",
+      "pdf_start": 39,
+      "pdf_end": 48
+    },
+    {
+      "chapter": 5,
+      "chapter_title": "Conditionals and recursion",
+      "pdf_start": 61,
+      "pdf_end": 68
+    },
+    {
+      "chapter": 7,
+      "chapter_title": "Iteration",
+      "pdf_start": 85,
+      "pdf_end": 90
+    },
+    {
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "pdf_start": 111,
+      "pdf_end": 115
+    },
+    {
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "pdf_start": 125,
+      "pdf_end": 129
+    }
+  ],
+  "counting_rule": "Count each selected physical PDF page once; exclude front matter, blanks and all unselected ranges. Selected chapter openings contain substantive instruction; glossaries are instructional content. No duplicated pages.",
+  "page_reference_rule": "page is 1-based physical PDF page; printed_page = page - 22 for selected ranges, verified against printed headers.",
+  "transformations": [
+    "Poppler layout extraction",
+    "Unicode NFC; normalized line endings and blank lines",
+    "Preserved code indentation, punctuation and line-end hyphens",
+    "Removed verified first-line running headers"
+  ],
+  "metadata_schema": {
+    "chapter": {
+      "type": "integer",
+      "source": "Chapter heading and running headers in PDF",
+      "purpose": "Filter by chapter explicitly requested in query/context"
+    },
+    "chapter_title": {
+      "type": "string",
+      "source": "Chapter heading in PDF"
+    },
+    "language": {
+      "type": "string",
+      "source": "English source text"
+    },
+    "version": {
+      "type": "string",
+      "source": "PDF cover, physical page 1"
+    }
+  },
+  "limitations": [
+    "English corpus; query language must be documented in benchmark",
+    "Figures and diagrams are not represented faithfully in plain text",
+    "Printed line-end hyphenation retained to avoid modifying code",
+    "Selected page ranges are excerpts, not complete chapters"
+  ],
+  "attribution": "Think Python, 2nd Edition, Version 2.4.1, Allen B. Downey, copyright 2015. Source: https://greenteapress.com/thinkpython2/thinkpython2.pdf. CC BY-NC 3.0. Derived text normalized and selected for a noncommercial educational lab; original PDF unchanged.",
+  "physical_page_count": 244,
+  "content_page_count": 40,
+  "pages": [
+    {
+      "page": 1,
+      "page_id": "think-python-2e-2.4.1:pdf-001",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 230,
+      "extracted_normalized_char_count": 230
+    },
+    {
+      "page": 2,
+      "page_id": "think-python-2e-2.4.1:pdf-002",
+      "included": false,
+      "reason": "No extractable text",
+      "normalized_char_count": 0,
+      "extracted_normalized_char_count": 0
+    },
+    {
+      "page": 3,
+      "page_id": "think-python-2e-2.4.1:pdf-003",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 244,
+      "extracted_normalized_char_count": 244
+    },
+    {
+      "page": 4,
+      "page_id": "think-python-2e-2.4.1:pdf-004",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 644,
+      "extracted_normalized_char_count": 644
+    },
+    {
+      "page": 5,
+      "page_id": "think-python-2e-2.4.1:pdf-005",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2258,
+      "extracted_normalized_char_count": 2258
+    },
+    {
+      "page": 6,
+      "page_id": "think-python-2e-2.4.1:pdf-006",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2299,
+      "extracted_normalized_char_count": 2299
+    },
+    {
+      "page": 7,
+      "page_id": "think-python-2e-2.4.1:pdf-007",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2660,
+      "extracted_normalized_char_count": 2660
+    },
+    {
+      "page": 8,
+      "page_id": "think-python-2e-2.4.1:pdf-008",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 3005,
+      "extracted_normalized_char_count": 3005
+    },
+    {
+      "page": 9,
+      "page_id": "think-python-2e-2.4.1:pdf-009",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2392,
+      "extracted_normalized_char_count": 2392
+    },
+    {
+      "page": 10,
+      "page_id": "think-python-2e-2.4.1:pdf-010",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2273,
+      "extracted_normalized_char_count": 2273
+    },
+    {
+      "page": 11,
+      "page_id": "think-python-2e-2.4.1:pdf-011",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2516,
+      "extracted_normalized_char_count": 2516
+    },
+    {
+      "page": 12,
+      "page_id": "think-python-2e-2.4.1:pdf-012",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 13,
+      "extracted_normalized_char_count": 13
+    },
+    {
+      "page": 13,
+      "page_id": "think-python-2e-2.4.1:pdf-013",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2264,
+      "extracted_normalized_char_count": 2264
+    },
+    {
+      "page": 14,
+      "page_id": "think-python-2e-2.4.1:pdf-014",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 3041,
+      "extracted_normalized_char_count": 3041
+    },
+    {
+      "page": 15,
+      "page_id": "think-python-2e-2.4.1:pdf-015",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2882,
+      "extracted_normalized_char_count": 2882
+    },
+    {
+      "page": 16,
+      "page_id": "think-python-2e-2.4.1:pdf-016",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 3465,
+      "extracted_normalized_char_count": 3465
+    },
+    {
+      "page": 17,
+      "page_id": "think-python-2e-2.4.1:pdf-017",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 2960,
+      "extracted_normalized_char_count": 2960
+    },
+    {
+      "page": 18,
+      "page_id": "think-python-2e-2.4.1:pdf-018",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 3219,
+      "extracted_normalized_char_count": 3219
+    },
+    {
+      "page": 19,
+      "page_id": "think-python-2e-2.4.1:pdf-019",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 3148,
+      "extracted_normalized_char_count": 3148
+    },
+    {
+      "page": 20,
+      "page_id": "think-python-2e-2.4.1:pdf-020",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 3268,
+      "extracted_normalized_char_count": 3268
+    },
+    {
+      "page": 21,
+      "page_id": "think-python-2e-2.4.1:pdf-021",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 1654,
+      "extracted_normalized_char_count": 1654
+    },
+    {
+      "page": 22,
+      "page_id": "think-python-2e-2.4.1:pdf-022",
+      "included": false,
+      "reason": "Front matter: cover, license, preface or contents",
+      "normalized_char_count": 15,
+      "extracted_normalized_char_count": 15
+    },
+    {
+      "page": 23,
+      "page_id": "think-python-2e-2.4.1:pdf-023",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1975,
+      "extracted_normalized_char_count": 1975
+    },
+    {
+      "page": 24,
+      "page_id": "think-python-2e-2.4.1:pdf-024",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2749,
+      "extracted_normalized_char_count": 2749
+    },
+    {
+      "page": 25,
+      "page_id": "think-python-2e-2.4.1:pdf-025",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1849,
+      "extracted_normalized_char_count": 1849
+    },
+    {
+      "page": 26,
+      "page_id": "think-python-2e-2.4.1:pdf-026",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2059,
+      "extracted_normalized_char_count": 2059
+    },
+    {
+      "page": 27,
+      "page_id": "think-python-2e-2.4.1:pdf-027",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3003,
+      "extracted_normalized_char_count": 3003
+    },
+    {
+      "page": 28,
+      "page_id": "think-python-2e-2.4.1:pdf-028",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2714,
+      "extracted_normalized_char_count": 2714
+    },
+    {
+      "page": 29,
+      "page_id": "think-python-2e-2.4.1:pdf-029",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2356,
+      "extracted_normalized_char_count": 2356
+    },
+    {
+      "page": 30,
+      "page_id": "think-python-2e-2.4.1:pdf-030",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 699,
+      "extracted_normalized_char_count": 699
+    },
+    {
+      "page": 31,
+      "page_id": "think-python-2e-2.4.1:pdf-031",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1260,
+      "extracted_normalized_char_count": 1260
+    },
+    {
+      "page": 32,
+      "page_id": "think-python-2e-2.4.1:pdf-032",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2099,
+      "extracted_normalized_char_count": 2191
+    },
+    {
+      "page": 33,
+      "page_id": "think-python-2e-2.4.1:pdf-033",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2389,
+      "extracted_normalized_char_count": 2486
+    },
+    {
+      "page": 34,
+      "page_id": "think-python-2e-2.4.1:pdf-034",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2341,
+      "extracted_normalized_char_count": 2432
+    },
+    {
+      "page": 35,
+      "page_id": "think-python-2e-2.4.1:pdf-035",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2760,
+      "extracted_normalized_char_count": 2854
+    },
+    {
+      "page": 36,
+      "page_id": "think-python-2e-2.4.1:pdf-036",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1969,
+      "extracted_normalized_char_count": 2062
+    },
+    {
+      "page": 37,
+      "page_id": "think-python-2e-2.4.1:pdf-037",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1032,
+      "extracted_normalized_char_count": 1032
+    },
+    {
+      "page": 38,
+      "page_id": "think-python-2e-2.4.1:pdf-038",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 53,
+      "extracted_normalized_char_count": 53
+    },
+    {
+      "page": 39,
+      "page_id": "think-python-2e-2.4.1:pdf-039",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1148,
+      "extracted_normalized_char_count": 1148
+    },
+    {
+      "page": 40,
+      "page_id": "think-python-2e-2.4.1:pdf-040",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1773,
+      "extracted_normalized_char_count": 1863
+    },
+    {
+      "page": 41,
+      "page_id": "think-python-2e-2.4.1:pdf-041",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2633,
+      "extracted_normalized_char_count": 2730
+    },
+    {
+      "page": 42,
+      "page_id": "think-python-2e-2.4.1:pdf-042",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1621,
+      "extracted_normalized_char_count": 1714
+    },
+    {
+      "page": 43,
+      "page_id": "think-python-2e-2.4.1:pdf-043",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2484,
+      "extracted_normalized_char_count": 2579
+    },
+    {
+      "page": 44,
+      "page_id": "think-python-2e-2.4.1:pdf-044",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1528,
+      "extracted_normalized_char_count": 1619
+    },
+    {
+      "page": 45,
+      "page_id": "think-python-2e-2.4.1:pdf-045",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2143,
+      "extracted_normalized_char_count": 2239
+    },
+    {
+      "page": 46,
+      "page_id": "think-python-2e-2.4.1:pdf-046",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1883,
+      "extracted_normalized_char_count": 1981
+    },
+    {
+      "page": 47,
+      "page_id": "think-python-2e-2.4.1:pdf-047",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2580,
+      "extracted_normalized_char_count": 2674
+    },
+    {
+      "page": 48,
+      "page_id": "think-python-2e-2.4.1:pdf-048",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2323,
+      "extracted_normalized_char_count": 2422
+    },
+    {
+      "page": 49,
+      "page_id": "think-python-2e-2.4.1:pdf-049",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1965,
+      "extracted_normalized_char_count": 1965
+    },
+    {
+      "page": 50,
+      "page_id": "think-python-2e-2.4.1:pdf-050",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 504,
+      "extracted_normalized_char_count": 504
+    },
+    {
+      "page": 51,
+      "page_id": "think-python-2e-2.4.1:pdf-051",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1382,
+      "extracted_normalized_char_count": 1382
+    },
+    {
+      "page": 52,
+      "page_id": "think-python-2e-2.4.1:pdf-052",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1779,
+      "extracted_normalized_char_count": 1779
+    },
+    {
+      "page": 53,
+      "page_id": "think-python-2e-2.4.1:pdf-053",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2759,
+      "extracted_normalized_char_count": 2759
+    },
+    {
+      "page": 54,
+      "page_id": "think-python-2e-2.4.1:pdf-054",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1943,
+      "extracted_normalized_char_count": 1943
+    },
+    {
+      "page": 55,
+      "page_id": "think-python-2e-2.4.1:pdf-055",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2596,
+      "extracted_normalized_char_count": 2596
+    },
+    {
+      "page": 56,
+      "page_id": "think-python-2e-2.4.1:pdf-056",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1881,
+      "extracted_normalized_char_count": 1881
+    },
+    {
+      "page": 57,
+      "page_id": "think-python-2e-2.4.1:pdf-057",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2182,
+      "extracted_normalized_char_count": 2182
+    },
+    {
+      "page": 58,
+      "page_id": "think-python-2e-2.4.1:pdf-058",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2578,
+      "extracted_normalized_char_count": 2578
+    },
+    {
+      "page": 59,
+      "page_id": "think-python-2e-2.4.1:pdf-059",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2147,
+      "extracted_normalized_char_count": 2147
+    },
+    {
+      "page": 60,
+      "page_id": "think-python-2e-2.4.1:pdf-060",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 451,
+      "extracted_normalized_char_count": 451
+    },
+    {
+      "page": 61,
+      "page_id": "think-python-2e-2.4.1:pdf-061",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1173,
+      "extracted_normalized_char_count": 1173
+    },
+    {
+      "page": 62,
+      "page_id": "think-python-2e-2.4.1:pdf-062",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2135,
+      "extracted_normalized_char_count": 2228
+    },
+    {
+      "page": 63,
+      "page_id": "think-python-2e-2.4.1:pdf-063",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1936,
+      "extracted_normalized_char_count": 2031
+    },
+    {
+      "page": 64,
+      "page_id": "think-python-2e-2.4.1:pdf-064",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1858,
+      "extracted_normalized_char_count": 1951
+    },
+    {
+      "page": 65,
+      "page_id": "think-python-2e-2.4.1:pdf-065",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1792,
+      "extracted_normalized_char_count": 1893
+    },
+    {
+      "page": 66,
+      "page_id": "think-python-2e-2.4.1:pdf-066",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2229,
+      "extracted_normalized_char_count": 2322
+    },
+    {
+      "page": 67,
+      "page_id": "think-python-2e-2.4.1:pdf-067",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2051,
+      "extracted_normalized_char_count": 2148
+    },
+    {
+      "page": 68,
+      "page_id": "think-python-2e-2.4.1:pdf-068",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2026,
+      "extracted_normalized_char_count": 2117
+    },
+    {
+      "page": 69,
+      "page_id": "think-python-2e-2.4.1:pdf-069",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2205,
+      "extracted_normalized_char_count": 2205
+    },
+    {
+      "page": 70,
+      "page_id": "think-python-2e-2.4.1:pdf-070",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2569,
+      "extracted_normalized_char_count": 2569
+    },
+    {
+      "page": 71,
+      "page_id": "think-python-2e-2.4.1:pdf-071",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1378,
+      "extracted_normalized_char_count": 1378
+    },
+    {
+      "page": 72,
+      "page_id": "think-python-2e-2.4.1:pdf-072",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 42,
+      "extracted_normalized_char_count": 42
+    },
+    {
+      "page": 73,
+      "page_id": "think-python-2e-2.4.1:pdf-073",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1425,
+      "extracted_normalized_char_count": 1425
+    },
+    {
+      "page": 74,
+      "page_id": "think-python-2e-2.4.1:pdf-074",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2299,
+      "extracted_normalized_char_count": 2299
+    },
+    {
+      "page": 75,
+      "page_id": "think-python-2e-2.4.1:pdf-075",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2460,
+      "extracted_normalized_char_count": 2460
+    },
+    {
+      "page": 76,
+      "page_id": "think-python-2e-2.4.1:pdf-076",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2133,
+      "extracted_normalized_char_count": 2133
+    },
+    {
+      "page": 77,
+      "page_id": "think-python-2e-2.4.1:pdf-077",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2455,
+      "extracted_normalized_char_count": 2455
+    },
+    {
+      "page": 78,
+      "page_id": "think-python-2e-2.4.1:pdf-078",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2252,
+      "extracted_normalized_char_count": 2252
+    },
+    {
+      "page": 79,
+      "page_id": "think-python-2e-2.4.1:pdf-079",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2647,
+      "extracted_normalized_char_count": 2647
+    },
+    {
+      "page": 80,
+      "page_id": "think-python-2e-2.4.1:pdf-080",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2054,
+      "extracted_normalized_char_count": 2054
+    },
+    {
+      "page": 81,
+      "page_id": "think-python-2e-2.4.1:pdf-081",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2224,
+      "extracted_normalized_char_count": 2224
+    },
+    {
+      "page": 82,
+      "page_id": "think-python-2e-2.4.1:pdf-082",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1418,
+      "extracted_normalized_char_count": 1418
+    },
+    {
+      "page": 83,
+      "page_id": "think-python-2e-2.4.1:pdf-083",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2646,
+      "extracted_normalized_char_count": 2646
+    },
+    {
+      "page": 84,
+      "page_id": "think-python-2e-2.4.1:pdf-084",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 34,
+      "extracted_normalized_char_count": 34
+    },
+    {
+      "page": 85,
+      "page_id": "think-python-2e-2.4.1:pdf-085",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1474,
+      "extracted_normalized_char_count": 1474
+    },
+    {
+      "page": 86,
+      "page_id": "think-python-2e-2.4.1:pdf-086",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1828,
+      "extracted_normalized_char_count": 1923
+    },
+    {
+      "page": 87,
+      "page_id": "think-python-2e-2.4.1:pdf-087",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2500,
+      "extracted_normalized_char_count": 2599
+    },
+    {
+      "page": 88,
+      "page_id": "think-python-2e-2.4.1:pdf-088",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1728,
+      "extracted_normalized_char_count": 1822
+    },
+    {
+      "page": 89,
+      "page_id": "think-python-2e-2.4.1:pdf-089",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1563,
+      "extracted_normalized_char_count": 1656
+    },
+    {
+      "page": 90,
+      "page_id": "think-python-2e-2.4.1:pdf-090",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2765,
+      "extracted_normalized_char_count": 2860
+    },
+    {
+      "page": 91,
+      "page_id": "think-python-2e-2.4.1:pdf-091",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2133,
+      "extracted_normalized_char_count": 2133
+    },
+    {
+      "page": 92,
+      "page_id": "think-python-2e-2.4.1:pdf-092",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 822,
+      "extracted_normalized_char_count": 822
+    },
+    {
+      "page": 93,
+      "page_id": "think-python-2e-2.4.1:pdf-093",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1208,
+      "extracted_normalized_char_count": 1208
+    },
+    {
+      "page": 94,
+      "page_id": "think-python-2e-2.4.1:pdf-094",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1951,
+      "extracted_normalized_char_count": 1951
+    },
+    {
+      "page": 95,
+      "page_id": "think-python-2e-2.4.1:pdf-095",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1705,
+      "extracted_normalized_char_count": 1705
+    },
+    {
+      "page": 96,
+      "page_id": "think-python-2e-2.4.1:pdf-096",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1580,
+      "extracted_normalized_char_count": 1580
+    },
+    {
+      "page": 97,
+      "page_id": "think-python-2e-2.4.1:pdf-097",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2025,
+      "extracted_normalized_char_count": 2025
+    },
+    {
+      "page": 98,
+      "page_id": "think-python-2e-2.4.1:pdf-098",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1685,
+      "extracted_normalized_char_count": 1685
+    },
+    {
+      "page": 99,
+      "page_id": "think-python-2e-2.4.1:pdf-099",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1761,
+      "extracted_normalized_char_count": 1761
+    },
+    {
+      "page": 100,
+      "page_id": "think-python-2e-2.4.1:pdf-100",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2189,
+      "extracted_normalized_char_count": 2189
+    },
+    {
+      "page": 101,
+      "page_id": "think-python-2e-2.4.1:pdf-101",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2305,
+      "extracted_normalized_char_count": 2305
+    },
+    {
+      "page": 102,
+      "page_id": "think-python-2e-2.4.1:pdf-102",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1963,
+      "extracted_normalized_char_count": 1963
+    },
+    {
+      "page": 103,
+      "page_id": "think-python-2e-2.4.1:pdf-103",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 608,
+      "extracted_normalized_char_count": 608
+    },
+    {
+      "page": 104,
+      "page_id": "think-python-2e-2.4.1:pdf-104",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 23,
+      "extracted_normalized_char_count": 23
+    },
+    {
+      "page": 105,
+      "page_id": "think-python-2e-2.4.1:pdf-105",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1845,
+      "extracted_normalized_char_count": 1845
+    },
+    {
+      "page": 106,
+      "page_id": "think-python-2e-2.4.1:pdf-106",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2606,
+      "extracted_normalized_char_count": 2606
+    },
+    {
+      "page": 107,
+      "page_id": "think-python-2e-2.4.1:pdf-107",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2296,
+      "extracted_normalized_char_count": 2296
+    },
+    {
+      "page": 108,
+      "page_id": "think-python-2e-2.4.1:pdf-108",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1964,
+      "extracted_normalized_char_count": 1964
+    },
+    {
+      "page": 109,
+      "page_id": "think-python-2e-2.4.1:pdf-109",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2166,
+      "extracted_normalized_char_count": 2166
+    },
+    {
+      "page": 110,
+      "page_id": "think-python-2e-2.4.1:pdf-110",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2971,
+      "extracted_normalized_char_count": 2971
+    },
+    {
+      "page": 111,
+      "page_id": "think-python-2e-2.4.1:pdf-111",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1208,
+      "extracted_normalized_char_count": 1208
+    },
+    {
+      "page": 112,
+      "page_id": "think-python-2e-2.4.1:pdf-112",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1978,
+      "extracted_normalized_char_count": 2073
+    },
+    {
+      "page": 113,
+      "page_id": "think-python-2e-2.4.1:pdf-113",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1527,
+      "extracted_normalized_char_count": 1624
+    },
+    {
+      "page": 114,
+      "page_id": "think-python-2e-2.4.1:pdf-114",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1305,
+      "extracted_normalized_char_count": 1402
+    },
+    {
+      "page": 115,
+      "page_id": "think-python-2e-2.4.1:pdf-115",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1712,
+      "extracted_normalized_char_count": 1805
+    },
+    {
+      "page": 116,
+      "page_id": "think-python-2e-2.4.1:pdf-116",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1556,
+      "extracted_normalized_char_count": 1556
+    },
+    {
+      "page": 117,
+      "page_id": "think-python-2e-2.4.1:pdf-117",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1923,
+      "extracted_normalized_char_count": 1923
+    },
+    {
+      "page": 118,
+      "page_id": "think-python-2e-2.4.1:pdf-118",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1872,
+      "extracted_normalized_char_count": 1872
+    },
+    {
+      "page": 119,
+      "page_id": "think-python-2e-2.4.1:pdf-119",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1732,
+      "extracted_normalized_char_count": 1732
+    },
+    {
+      "page": 120,
+      "page_id": "think-python-2e-2.4.1:pdf-120",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1660,
+      "extracted_normalized_char_count": 1660
+    },
+    {
+      "page": 121,
+      "page_id": "think-python-2e-2.4.1:pdf-121",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1728,
+      "extracted_normalized_char_count": 1728
+    },
+    {
+      "page": 122,
+      "page_id": "think-python-2e-2.4.1:pdf-122",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1971,
+      "extracted_normalized_char_count": 1971
+    },
+    {
+      "page": 123,
+      "page_id": "think-python-2e-2.4.1:pdf-123",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3217,
+      "extracted_normalized_char_count": 3217
+    },
+    {
+      "page": 124,
+      "page_id": "think-python-2e-2.4.1:pdf-124",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 465,
+      "extracted_normalized_char_count": 465
+    },
+    {
+      "page": 125,
+      "page_id": "think-python-2e-2.4.1:pdf-125",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1513,
+      "extracted_normalized_char_count": 1513
+    },
+    {
+      "page": 126,
+      "page_id": "think-python-2e-2.4.1:pdf-126",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1973,
+      "extracted_normalized_char_count": 2068
+    },
+    {
+      "page": 127,
+      "page_id": "think-python-2e-2.4.1:pdf-127",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 2225,
+      "extracted_normalized_char_count": 2322
+    },
+    {
+      "page": 128,
+      "page_id": "think-python-2e-2.4.1:pdf-128",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1357,
+      "extracted_normalized_char_count": 1450
+    },
+    {
+      "page": 129,
+      "page_id": "think-python-2e-2.4.1:pdf-129",
+      "included": true,
+      "reason": "Selected instructional content/glossary",
+      "normalized_char_count": 1917,
+      "extracted_normalized_char_count": 2012
+    },
+    {
+      "page": 130,
+      "page_id": "think-python-2e-2.4.1:pdf-130",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2769,
+      "extracted_normalized_char_count": 2769
+    },
+    {
+      "page": 131,
+      "page_id": "think-python-2e-2.4.1:pdf-131",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2024,
+      "extracted_normalized_char_count": 2024
+    },
+    {
+      "page": 132,
+      "page_id": "think-python-2e-2.4.1:pdf-132",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2059,
+      "extracted_normalized_char_count": 2059
+    },
+    {
+      "page": 133,
+      "page_id": "think-python-2e-2.4.1:pdf-133",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2404,
+      "extracted_normalized_char_count": 2404
+    },
+    {
+      "page": 134,
+      "page_id": "think-python-2e-2.4.1:pdf-134",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2307,
+      "extracted_normalized_char_count": 2307
+    },
+    {
+      "page": 135,
+      "page_id": "think-python-2e-2.4.1:pdf-135",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3476,
+      "extracted_normalized_char_count": 3476
+    },
+    {
+      "page": 136,
+      "page_id": "think-python-2e-2.4.1:pdf-136",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 220,
+      "extracted_normalized_char_count": 220
+    },
+    {
+      "page": 137,
+      "page_id": "think-python-2e-2.4.1:pdf-137",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1220,
+      "extracted_normalized_char_count": 1220
+    },
+    {
+      "page": 138,
+      "page_id": "think-python-2e-2.4.1:pdf-138",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1597,
+      "extracted_normalized_char_count": 1597
+    },
+    {
+      "page": 139,
+      "page_id": "think-python-2e-2.4.1:pdf-139",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1765,
+      "extracted_normalized_char_count": 1765
+    },
+    {
+      "page": 140,
+      "page_id": "think-python-2e-2.4.1:pdf-140",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1639,
+      "extracted_normalized_char_count": 1639
+    },
+    {
+      "page": 141,
+      "page_id": "think-python-2e-2.4.1:pdf-141",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1904,
+      "extracted_normalized_char_count": 1904
+    },
+    {
+      "page": 142,
+      "page_id": "think-python-2e-2.4.1:pdf-142",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2233,
+      "extracted_normalized_char_count": 2233
+    },
+    {
+      "page": 143,
+      "page_id": "think-python-2e-2.4.1:pdf-143",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2458,
+      "extracted_normalized_char_count": 2458
+    },
+    {
+      "page": 144,
+      "page_id": "think-python-2e-2.4.1:pdf-144",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2061,
+      "extracted_normalized_char_count": 2061
+    },
+    {
+      "page": 145,
+      "page_id": "think-python-2e-2.4.1:pdf-145",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2647,
+      "extracted_normalized_char_count": 2647
+    },
+    {
+      "page": 146,
+      "page_id": "think-python-2e-2.4.1:pdf-146",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1914,
+      "extracted_normalized_char_count": 1914
+    },
+    {
+      "page": 147,
+      "page_id": "think-python-2e-2.4.1:pdf-147",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1738,
+      "extracted_normalized_char_count": 1738
+    },
+    {
+      "page": 148,
+      "page_id": "think-python-2e-2.4.1:pdf-148",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2344,
+      "extracted_normalized_char_count": 2344
+    },
+    {
+      "page": 149,
+      "page_id": "think-python-2e-2.4.1:pdf-149",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1849,
+      "extracted_normalized_char_count": 1849
+    },
+    {
+      "page": 150,
+      "page_id": "think-python-2e-2.4.1:pdf-150",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1586,
+      "extracted_normalized_char_count": 1586
+    },
+    {
+      "page": 151,
+      "page_id": "think-python-2e-2.4.1:pdf-151",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1966,
+      "extracted_normalized_char_count": 1966
+    },
+    {
+      "page": 152,
+      "page_id": "think-python-2e-2.4.1:pdf-152",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2360,
+      "extracted_normalized_char_count": 2360
+    },
+    {
+      "page": 153,
+      "page_id": "think-python-2e-2.4.1:pdf-153",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2913,
+      "extracted_normalized_char_count": 2913
+    },
+    {
+      "page": 154,
+      "page_id": "think-python-2e-2.4.1:pdf-154",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2814,
+      "extracted_normalized_char_count": 2814
+    },
+    {
+      "page": 155,
+      "page_id": "think-python-2e-2.4.1:pdf-155",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2874,
+      "extracted_normalized_char_count": 2874
+    },
+    {
+      "page": 156,
+      "page_id": "think-python-2e-2.4.1:pdf-156",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2737,
+      "extracted_normalized_char_count": 2737
+    },
+    {
+      "page": 157,
+      "page_id": "think-python-2e-2.4.1:pdf-157",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1208,
+      "extracted_normalized_char_count": 1208
+    },
+    {
+      "page": 158,
+      "page_id": "think-python-2e-2.4.1:pdf-158",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 54,
+      "extracted_normalized_char_count": 54
+    },
+    {
+      "page": 159,
+      "page_id": "think-python-2e-2.4.1:pdf-159",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1566,
+      "extracted_normalized_char_count": 1566
+    },
+    {
+      "page": 160,
+      "page_id": "think-python-2e-2.4.1:pdf-160",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2173,
+      "extracted_normalized_char_count": 2173
+    },
+    {
+      "page": 161,
+      "page_id": "think-python-2e-2.4.1:pdf-161",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2297,
+      "extracted_normalized_char_count": 2297
+    },
+    {
+      "page": 162,
+      "page_id": "think-python-2e-2.4.1:pdf-162",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2071,
+      "extracted_normalized_char_count": 2071
+    },
+    {
+      "page": 163,
+      "page_id": "think-python-2e-2.4.1:pdf-163",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2215,
+      "extracted_normalized_char_count": 2215
+    },
+    {
+      "page": 164,
+      "page_id": "think-python-2e-2.4.1:pdf-164",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2150,
+      "extracted_normalized_char_count": 2150
+    },
+    {
+      "page": 165,
+      "page_id": "think-python-2e-2.4.1:pdf-165",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1758,
+      "extracted_normalized_char_count": 1758
+    },
+    {
+      "page": 166,
+      "page_id": "think-python-2e-2.4.1:pdf-166",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2333,
+      "extracted_normalized_char_count": 2333
+    },
+    {
+      "page": 167,
+      "page_id": "think-python-2e-2.4.1:pdf-167",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2634,
+      "extracted_normalized_char_count": 2634
+    },
+    {
+      "page": 168,
+      "page_id": "think-python-2e-2.4.1:pdf-168",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 894,
+      "extracted_normalized_char_count": 894
+    },
+    {
+      "page": 169,
+      "page_id": "think-python-2e-2.4.1:pdf-169",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1512,
+      "extracted_normalized_char_count": 1512
+    },
+    {
+      "page": 170,
+      "page_id": "think-python-2e-2.4.1:pdf-170",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2250,
+      "extracted_normalized_char_count": 2250
+    },
+    {
+      "page": 171,
+      "page_id": "think-python-2e-2.4.1:pdf-171",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1792,
+      "extracted_normalized_char_count": 1792
+    },
+    {
+      "page": 172,
+      "page_id": "think-python-2e-2.4.1:pdf-172",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1620,
+      "extracted_normalized_char_count": 1620
+    },
+    {
+      "page": 173,
+      "page_id": "think-python-2e-2.4.1:pdf-173",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1780,
+      "extracted_normalized_char_count": 1780
+    },
+    {
+      "page": 174,
+      "page_id": "think-python-2e-2.4.1:pdf-174",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2250,
+      "extracted_normalized_char_count": 2250
+    },
+    {
+      "page": 175,
+      "page_id": "think-python-2e-2.4.1:pdf-175",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1858,
+      "extracted_normalized_char_count": 1858
+    },
+    {
+      "page": 176,
+      "page_id": "think-python-2e-2.4.1:pdf-176",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1320,
+      "extracted_normalized_char_count": 1320
+    },
+    {
+      "page": 177,
+      "page_id": "think-python-2e-2.4.1:pdf-177",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1366,
+      "extracted_normalized_char_count": 1366
+    },
+    {
+      "page": 178,
+      "page_id": "think-python-2e-2.4.1:pdf-178",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2111,
+      "extracted_normalized_char_count": 2111
+    },
+    {
+      "page": 179,
+      "page_id": "think-python-2e-2.4.1:pdf-179",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1948,
+      "extracted_normalized_char_count": 1948
+    },
+    {
+      "page": 180,
+      "page_id": "think-python-2e-2.4.1:pdf-180",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2636,
+      "extracted_normalized_char_count": 2636
+    },
+    {
+      "page": 181,
+      "page_id": "think-python-2e-2.4.1:pdf-181",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2552,
+      "extracted_normalized_char_count": 2552
+    },
+    {
+      "page": 182,
+      "page_id": "think-python-2e-2.4.1:pdf-182",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2547,
+      "extracted_normalized_char_count": 2547
+    },
+    {
+      "page": 183,
+      "page_id": "think-python-2e-2.4.1:pdf-183",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1926,
+      "extracted_normalized_char_count": 1926
+    },
+    {
+      "page": 184,
+      "page_id": "think-python-2e-2.4.1:pdf-184",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2067,
+      "extracted_normalized_char_count": 2067
+    },
+    {
+      "page": 185,
+      "page_id": "think-python-2e-2.4.1:pdf-185",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2166,
+      "extracted_normalized_char_count": 2166
+    },
+    {
+      "page": 186,
+      "page_id": "think-python-2e-2.4.1:pdf-186",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2051,
+      "extracted_normalized_char_count": 2051
+    },
+    {
+      "page": 187,
+      "page_id": "think-python-2e-2.4.1:pdf-187",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1707,
+      "extracted_normalized_char_count": 1707
+    },
+    {
+      "page": 188,
+      "page_id": "think-python-2e-2.4.1:pdf-188",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2037,
+      "extracted_normalized_char_count": 2037
+    },
+    {
+      "page": 189,
+      "page_id": "think-python-2e-2.4.1:pdf-189",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1932,
+      "extracted_normalized_char_count": 1932
+    },
+    {
+      "page": 190,
+      "page_id": "think-python-2e-2.4.1:pdf-190",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2158,
+      "extracted_normalized_char_count": 2158
+    },
+    {
+      "page": 191,
+      "page_id": "think-python-2e-2.4.1:pdf-191",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2464,
+      "extracted_normalized_char_count": 2464
+    },
+    {
+      "page": 192,
+      "page_id": "think-python-2e-2.4.1:pdf-192",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1548,
+      "extracted_normalized_char_count": 1548
+    },
+    {
+      "page": 193,
+      "page_id": "think-python-2e-2.4.1:pdf-193",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1805,
+      "extracted_normalized_char_count": 1805
+    },
+    {
+      "page": 194,
+      "page_id": "think-python-2e-2.4.1:pdf-194",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2204,
+      "extracted_normalized_char_count": 2204
+    },
+    {
+      "page": 195,
+      "page_id": "think-python-2e-2.4.1:pdf-195",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2403,
+      "extracted_normalized_char_count": 2403
+    },
+    {
+      "page": 196,
+      "page_id": "think-python-2e-2.4.1:pdf-196",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1670,
+      "extracted_normalized_char_count": 1670
+    },
+    {
+      "page": 197,
+      "page_id": "think-python-2e-2.4.1:pdf-197",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1888,
+      "extracted_normalized_char_count": 1888
+    },
+    {
+      "page": 198,
+      "page_id": "think-python-2e-2.4.1:pdf-198",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2194,
+      "extracted_normalized_char_count": 2194
+    },
+    {
+      "page": 199,
+      "page_id": "think-python-2e-2.4.1:pdf-199",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2742,
+      "extracted_normalized_char_count": 2742
+    },
+    {
+      "page": 200,
+      "page_id": "think-python-2e-2.4.1:pdf-200",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2294,
+      "extracted_normalized_char_count": 2294
+    },
+    {
+      "page": 201,
+      "page_id": "think-python-2e-2.4.1:pdf-201",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2541,
+      "extracted_normalized_char_count": 2541
+    },
+    {
+      "page": 202,
+      "page_id": "think-python-2e-2.4.1:pdf-202",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2281,
+      "extracted_normalized_char_count": 2281
+    },
+    {
+      "page": 203,
+      "page_id": "think-python-2e-2.4.1:pdf-203",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1870,
+      "extracted_normalized_char_count": 1870
+    },
+    {
+      "page": 204,
+      "page_id": "think-python-2e-2.4.1:pdf-204",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2028,
+      "extracted_normalized_char_count": 2028
+    },
+    {
+      "page": 205,
+      "page_id": "think-python-2e-2.4.1:pdf-205",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1445,
+      "extracted_normalized_char_count": 1445
+    },
+    {
+      "page": 206,
+      "page_id": "think-python-2e-2.4.1:pdf-206",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1945,
+      "extracted_normalized_char_count": 1945
+    },
+    {
+      "page": 207,
+      "page_id": "think-python-2e-2.4.1:pdf-207",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1891,
+      "extracted_normalized_char_count": 1891
+    },
+    {
+      "page": 208,
+      "page_id": "think-python-2e-2.4.1:pdf-208",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2262,
+      "extracted_normalized_char_count": 2262
+    },
+    {
+      "page": 209,
+      "page_id": "think-python-2e-2.4.1:pdf-209",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2136,
+      "extracted_normalized_char_count": 2136
+    },
+    {
+      "page": 210,
+      "page_id": "think-python-2e-2.4.1:pdf-210",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2078,
+      "extracted_normalized_char_count": 2078
+    },
+    {
+      "page": 211,
+      "page_id": "think-python-2e-2.4.1:pdf-211",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1806,
+      "extracted_normalized_char_count": 1806
+    },
+    {
+      "page": 212,
+      "page_id": "think-python-2e-2.4.1:pdf-212",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1709,
+      "extracted_normalized_char_count": 1709
+    },
+    {
+      "page": 213,
+      "page_id": "think-python-2e-2.4.1:pdf-213",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1818,
+      "extracted_normalized_char_count": 1818
+    },
+    {
+      "page": 214,
+      "page_id": "think-python-2e-2.4.1:pdf-214",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 868,
+      "extracted_normalized_char_count": 868
+    },
+    {
+      "page": 215,
+      "page_id": "think-python-2e-2.4.1:pdf-215",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 1828,
+      "extracted_normalized_char_count": 1828
+    },
+    {
+      "page": 216,
+      "page_id": "think-python-2e-2.4.1:pdf-216",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2850,
+      "extracted_normalized_char_count": 2850
+    },
+    {
+      "page": 217,
+      "page_id": "think-python-2e-2.4.1:pdf-217",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2677,
+      "extracted_normalized_char_count": 2677
+    },
+    {
+      "page": 218,
+      "page_id": "think-python-2e-2.4.1:pdf-218",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2371,
+      "extracted_normalized_char_count": 2371
+    },
+    {
+      "page": 219,
+      "page_id": "think-python-2e-2.4.1:pdf-219",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3046,
+      "extracted_normalized_char_count": 3046
+    },
+    {
+      "page": 220,
+      "page_id": "think-python-2e-2.4.1:pdf-220",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2775,
+      "extracted_normalized_char_count": 2775
+    },
+    {
+      "page": 221,
+      "page_id": "think-python-2e-2.4.1:pdf-221",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2536,
+      "extracted_normalized_char_count": 2536
+    },
+    {
+      "page": 222,
+      "page_id": "think-python-2e-2.4.1:pdf-222",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2458,
+      "extracted_normalized_char_count": 2458
+    },
+    {
+      "page": 223,
+      "page_id": "think-python-2e-2.4.1:pdf-223",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2395,
+      "extracted_normalized_char_count": 2395
+    },
+    {
+      "page": 224,
+      "page_id": "think-python-2e-2.4.1:pdf-224",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2922,
+      "extracted_normalized_char_count": 2922
+    },
+    {
+      "page": 225,
+      "page_id": "think-python-2e-2.4.1:pdf-225",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3049,
+      "extracted_normalized_char_count": 3049
+    },
+    {
+      "page": 226,
+      "page_id": "think-python-2e-2.4.1:pdf-226",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2949,
+      "extracted_normalized_char_count": 2949
+    },
+    {
+      "page": 227,
+      "page_id": "think-python-2e-2.4.1:pdf-227",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2883,
+      "extracted_normalized_char_count": 2883
+    },
+    {
+      "page": 228,
+      "page_id": "think-python-2e-2.4.1:pdf-228",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2354,
+      "extracted_normalized_char_count": 2354
+    },
+    {
+      "page": 229,
+      "page_id": "think-python-2e-2.4.1:pdf-229",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2156,
+      "extracted_normalized_char_count": 2156
+    },
+    {
+      "page": 230,
+      "page_id": "think-python-2e-2.4.1:pdf-230",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2762,
+      "extracted_normalized_char_count": 2762
+    },
+    {
+      "page": 231,
+      "page_id": "think-python-2e-2.4.1:pdf-231",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2035,
+      "extracted_normalized_char_count": 2035
+    },
+    {
+      "page": 232,
+      "page_id": "think-python-2e-2.4.1:pdf-232",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 205,
+      "extracted_normalized_char_count": 205
+    },
+    {
+      "page": 233,
+      "page_id": "think-python-2e-2.4.1:pdf-233",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2436,
+      "extracted_normalized_char_count": 2436
+    },
+    {
+      "page": 234,
+      "page_id": "think-python-2e-2.4.1:pdf-234",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3164,
+      "extracted_normalized_char_count": 3164
+    },
+    {
+      "page": 235,
+      "page_id": "think-python-2e-2.4.1:pdf-235",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3800,
+      "extracted_normalized_char_count": 3800
+    },
+    {
+      "page": 236,
+      "page_id": "think-python-2e-2.4.1:pdf-236",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3654,
+      "extracted_normalized_char_count": 3654
+    },
+    {
+      "page": 237,
+      "page_id": "think-python-2e-2.4.1:pdf-237",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3271,
+      "extracted_normalized_char_count": 3271
+    },
+    {
+      "page": 238,
+      "page_id": "think-python-2e-2.4.1:pdf-238",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2892,
+      "extracted_normalized_char_count": 2892
+    },
+    {
+      "page": 239,
+      "page_id": "think-python-2e-2.4.1:pdf-239",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 2872,
+      "extracted_normalized_char_count": 2872
+    },
+    {
+      "page": 240,
+      "page_id": "think-python-2e-2.4.1:pdf-240",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3397,
+      "extracted_normalized_char_count": 3397
+    },
+    {
+      "page": 241,
+      "page_id": "think-python-2e-2.4.1:pdf-241",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3281,
+      "extracted_normalized_char_count": 3281
+    },
+    {
+      "page": 242,
+      "page_id": "think-python-2e-2.4.1:pdf-242",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3160,
+      "extracted_normalized_char_count": 3160
+    },
+    {
+      "page": 243,
+      "page_id": "think-python-2e-2.4.1:pdf-243",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 3568,
+      "extracted_normalized_char_count": 3568
+    },
+    {
+      "page": 244,
+      "page_id": "think-python-2e-2.4.1:pdf-244",
+      "included": false,
+      "reason": "Outside selected instructional ranges",
+      "normalized_char_count": 486,
+      "extracted_normalized_char_count": 486
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "selected_strategy": "B",
+  "ranking": [
+    {
+      "strategy": "B",
+      "dev_evidence_hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "dev_hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "ingest_seconds": 12.097565033000137,
+      "chunk_count": 229
+    },
+    {
+      "strategy": "C",
+      "dev_evidence_hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "dev_hit1": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "ingest_seconds": 12.097565033000137,
+      "chunk_count": 229
+    },
+    {
+      "strategy": "A",
+      "dev_evidence_hit3": {
+        "n": 7,
+        "N": 15,
+        "rate": 0.4666666666666667
+      },
+      "dev_hit1": {
+        "n": 3,
+        "N": 15,
+        "rate": 0.2
+      },
+      "ingest_seconds": 11.581122865996804,
+      "chunk_count": 244
+    }
+  ],
+  "resource_policy": "C reuses B but is charged B's full ingest cost for tie-breaking",
+  "selected_at": "2026-11-14T05:00:53.613036+00:00",
+  "criteria": [
+    {
+      "metric": "dev_evidence_hit3",
+      "direction": "maximize"
+    },
+    {
+      "metric": "dev_hit1",
+      "direction": "maximize"
+    },
+    {
+      "metric": "ingest_seconds",
+      "direction": "minimize"
+    },
+    {
+      "metric": "chunk_count",
+      "direction": "minimize"
+    },
+    {
+      "metric": "strategy_id",
+      "direction": "ascending alphabetical order for exact remaining ties"
+    }
+  ],
+  "basis": "Frozen full-quote single-chunk evidence metric on dev only; no test-based tuning",
+  "embedding_signature": "6a10d47f60be99ad23235faca7c2cee88a06d30cb788fe9dccd6971af2f7d2ce",
+  "sha256": {
+    "benchmark/freeze.json": "8a3abce994762325377f725fd8be7128934a5184f53afd0e2fb123ffc92016f3",
+    "starter/model_config.json": "2cd8b69e27bc6c416cfce0355b7d0444ae9496ec3f33490b3597e19d89fb6b80",
+    "starter/strategies.json": "c7377f23ed54bfac6691c54385341054c405802e9751c4229ff21bc3ea98be38",
+    "results/chunks_A.jsonl": "e5d9ab13f082b4c9ebe5310e3b3f9fb0155332fa9bb189a7abd4fdd9f3529d3f",
+    "results/chunks_B.jsonl": "f1c842063a6fda989e5e6b8a7f2c572a37fcea02215a44d89592b337f4b9ff9c",
+    "results/vector_ingestion_stats.json": "8e2b4559d4d63a35bc15895b9d7781c206ebbc8980f6bba9f34749064f94b83d",
+    "results/retrieval_dev.jsonl": "65fcfc12966ff1b78ff9dbebd10046ae841bf442871f45894201bd9d34a3ec93",
+    "results/retrieval_metrics_dev.json": "ad9d3c3a357d062104368d364e2394fd5399c19b77e840e2a07abb70514b8ad6",
+    "starter/src/chunking.py": "ef07920213974dd82e12b85323b70ea32dc539d4b89443c07919f142e520c898",
+    "starter/src/embeddings.py": "5cd89e1a4effdbf899fa1860beccebcaeb96db297808d9753b5040b032e8c032",
+    "starter/src/store.py": "8c30260de26798ad8b4e81f31ea9ae44d7161ff32c8c25624df4101a878b83cc",
+    "starter/src/evaluation.py": "d9530ee43b3b0ce36d99ec6c99d844ab3e3aecf276f31aa9dace7dbaee3156dd",
+    "starter/src/benchmarking.py": "a61898d5e21dff984ff92ae713ee57353e1bd9753c2ca6288beaa1e1e1f214bd",
+    "starter/src/run.py": "dede84524c7e256088c7fe6c096756590a7549f17957609b26795a6ba84c86c4"
+  }
+}

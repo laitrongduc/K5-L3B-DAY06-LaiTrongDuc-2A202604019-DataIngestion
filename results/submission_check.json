@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-14T05:17:57.405538+00:00",
+  "report_relative_links_checked": 21,
+  "experiment_rows": 3,
+  "original_assignment_docs_unchanged": true,
+  "text_files_scanned_for_common_key_patterns": 84,
+  "common_key_patterns_found": 0,
+  "env_and_virtualenv_excluded_from_git": true,
+  "report_sha256": "88a5e08de7eae12ff0e2e44ae91681ef41f1a546caf3ab5f37c488ba32ddfccb",
+  "limitations": "Common-pattern scan, not an exhaustive secret detector; no claim that audit labels are human-confirmed or repository is submitted.",
+  "staged_text_files_scanned_for_common_key_patterns": 62,
+  "staged_common_key_patterns_found": 0
+}

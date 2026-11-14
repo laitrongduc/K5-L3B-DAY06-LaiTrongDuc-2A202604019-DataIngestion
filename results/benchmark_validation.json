@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "question_count": 20,
+  "split_counts": {
+    "dev": 15,
+    "test": 5
+  },
+  "question_type_counts": {
+    "direct": 5,
+    "paraphrase": 5,
+    "condition": 10
+  },
+  "filter_counts_by_split": {
+    "dev": 2,
+    "test": 2
+  },
+  "accepted_evidence_passages": 24,
+  "coherence_sample_count": 10,
+  "pdf_reextraction_checked": true,
+  "verified_pdf_pages": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    39,
+    40,
+    44,
+    46,
+    48,
+    61,
+    64,
+    66,
+    68,
+    86,
+    87,
+    88,
+    113,
+    114,
+    126,
+    127,
+    128
+  ],
+  "semantic_review": "AI-assisted author review recorded per question; independent human confirmation pending.",
+  "retrieval_executed_by_this_validator": false,
+  "checked_at": "2026-11-14T05:15:14.289636+00:00",
+  "frozen_snapshot_verified": true,
+  "validator_sha256": "82055ec7544163aa49f37e7394a727c2e28425efff6e57bcbded3ef757e10490"
+}

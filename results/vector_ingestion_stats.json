@@ -1,0 +1,74 @@
+{
+  "model": {
+    "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "dimensions": 384,
+    "dtype": "float32",
+    "device": "cpu",
+    "batch_size": 16,
+    "max_tokens": 128,
+    "query_prefix": "",
+    "document_prefix": "",
+    "vector_store": "pgvector",
+    "database_url_env": "DATABASE_URL",
+    "cache_path": "starter/.venv/model_cache"
+  },
+  "libraries": {
+    "torch": "2.15.0+cpu",
+    "transformers": "5.23.0",
+    "sentence-transformers": "6.3.0",
+    "psycopg": "3.3.8"
+  },
+  "embedding_signature": "6a10d47f60be99ad23235faca7c2cee88a06d30cb788fe9dccd6971af2f7d2ce",
+  "loaded_parameter_count": 117653760,
+  "verified_parameter_dtype": "float32",
+  "run_at": "2026-11-14T04:52:40.903752+00:00",
+  "model_load_seconds": 6.539610627000002,
+  "metric": "cosine",
+  "search_mode": "pgvector exact (no ANN index)",
+  "strategies": {
+    "A": {
+      "chunk_count": 244,
+      "repeat_count": 244,
+      "embedding_seconds": 11.45563841099829,
+      "store_seconds": 0.12548445499851368,
+      "ingest_seconds": 11.581122865996804,
+      "index": "day6_chunks:day6_6a10d47f60be99ad23235faca7c2cee88a06d30cb788fe9dccd6971af2f7d2ce:A",
+      "reingestion_without_duplicates": true
+    },
+    "B": {
+      "chunk_count": 229,
+      "repeat_count": 229,
+      "embedding_seconds": 12.000175860001036,
+      "store_seconds": 0.09738917299910099,
+      "ingest_seconds": 12.097565033000137,
+      "index": "day6_chunks:day6_6a10d47f60be99ad23235faca7c2cee88a06d30cb788fe9dccd6971af2f7d2ce:B",
+      "reingestion_without_duplicates": true
+    },
+    "C": {
+      "chunk_count": 229,
+      "index": "day6_chunks:day6_6a10d47f60be99ad23235faca7c2cee88a06d30cb788fe9dccd6971af2f7d2ce:B",
+      "reuses_vectors_from": "B",
+      "separate_embedding_performed": false
+    }
+  },
+  "paid_api_cost_usd": 0,
+  "cost_scope": "Local inference; hardware/electricity excluded",
+  "database": {
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7"
+  },
+  "persistent_reopen_verified": true,
+  "token_counts": {
+    "document": {
+      "inputs": 473,
+      "total": 41152,
+      "max": 128
+    },
+    "query": {
+      "inputs": 1,
+      "total": 12,
+      "max": 12
+    }
+  }
+}
